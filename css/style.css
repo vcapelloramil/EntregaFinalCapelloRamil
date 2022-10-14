@@ -45,7 +45,7 @@ html{
 .gridContainer{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 50px auto 400px; 
+    grid-template-rows: 56px auto 400px; 
     gap: 0px 0px; 
     grid-template-areas: 
     "header header"
@@ -58,9 +58,10 @@ html{
     margin: 0 auto;
 }
 .navbar{
-    background-color: rgba(255, 255, 255, 0.30);
+    /* background-color: rgba(255, 255, 255, 0.30);
     backdrop-filter: saturate(180%) blur(20px); 
-    border-bottom: 1px solid #c7c8ca;
+    border-bottom: 1px solid #c7c8ca; */
+    background-color: white;
 }
 
 .d-flex{
@@ -1685,7 +1686,7 @@ ul{
     .gridContainer{
         display: grid; 
         grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 50px auto 400px; 
+        grid-template-rows: 56px auto 400px; 
         gap: 0px 0px; 
         grid-template-areas: 
         "header header"
@@ -1775,7 +1776,7 @@ ul{
     .gridContainer{
         display: grid; 
         grid-template-columns: 1fr; 
-        grid-template-rows: 50px auto 600px; 
+        grid-template-rows: 56px auto 600px; 
         gap: 0px 0px; 
         grid-template-areas: 
         "header"
@@ -1802,6 +1803,57 @@ ul{
         height: 80vh;
         background-size: cover;
     }
+    .iphoneText{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: #9613dd;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .iphoneCircle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-image: linear-gradient(90deg,#2c1f89,#5715cf 24%,#9613dd 45%,#a411dc 76%,#e068a6);
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .iphoneButton:hover .iphoneText{
+        color: #9613dd;
+    }
+    .text{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: white;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .circle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .ipadButton:hover .text{
+        color: white;
+    }
+    
     .hero div h1{
         font-size: 45px;
     }
@@ -1881,7 +1933,7 @@ ul{
     .gridContainer{
         display: grid; 
         grid-template-columns: 1fr; 
-        grid-template-rows: 50px auto 1000px; 
+        grid-template-rows: 56px auto 1000px; 
         gap: 0px 0px; 
         grid-template-areas: 
         "header"
@@ -1932,9 +1984,50 @@ ul{
         width: 220px;
         padding-left: 1rem;
     } */
-    @media screen and (max-width:450px){
+    @media screen and (max-width:500px){
         .hero div h1{
-            font-size: 32px;
+            font-size: 24px;
+        }
+        .shopProducts div{
+            /* border:1px solid hsla(0,0%,63%,.25); */
+            height: 500px;
+            width: 300px;
+        }
+        .productsTitle div{
+            width: 300px;
+        }
+        .products div img{
+            width: 200px;
+            height: 200px;
+        }
+        .products2 div img{
+            width: 150px;
+            height: 200px;
+        }
+        .saleProducts div{
+            width: 300px;
+        }
+        .productsTitle div img{
+            width: 200px;
+            height: 200px;
+        }
+        .products2 div{
+            width: 300px;
+        }
+        .saleProducts div img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    @media screen and (max-width:360px){
+        .products div{
+            width: 250px;
+        }
+        .products2 div{
+            width: 250px;
+        }
+        .saleProducts div{
+            width: 250px;
         }
     }
 }
