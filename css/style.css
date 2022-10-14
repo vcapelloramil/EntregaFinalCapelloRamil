@@ -1651,18 +1651,6 @@ ul{
     .ipadCover{
         background-image: url(../img/backgroundPink.jpg);
     }
-    /* .footerShop ul{
-        width: 250px;
-    }
-    .storeLocation div{
-        width: 250px;
-    }
-    .footerAbout ul{
-        width: 250px;
-    }
-    .footerContact div{
-        width: 250px;
-    } */
 }
 @media screen and (max-width:1350px){
     .products div{
@@ -1796,6 +1784,42 @@ ul{
         justify-content: center;
         align-items: center;
     }
+    .iphoneCover{
+        background-image: url(../img/heroIphone14Pro2.png);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .iphoneCover div h2{
+        color: white;
+        font-size: 60px;
+        /* font-weight: bolder; */
+        margin-bottom: 20px;
+    }
+    .iphoneCover div h3{
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 35px;
+    }
+    .ipadCover{
+        background-image: url(../img/backgroundPinkMobile.jpg);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
     /* .hero{
         background-image: url(../img/heroSection/imacHero2.jpg);
         width: 100%;
@@ -1809,13 +1833,13 @@ ul{
         justify-content: center;
         align-items: center;
     } */
-    .iphoneCover{
+    /* .iphoneCover{
         background-image: url(../img/heroIphone14Pro2.png);
         display: flex;
         width: 100%;
         height: 80vh;
         background-size: cover;
-    }
+    } */
     .iphoneText{
         font-size: 1.2rem;
         position: absolute;
@@ -2007,6 +2031,9 @@ ul{
             width: 300px;
         }
         .productsTitle div{
+            width: 300px;
+        }
+        .products2Title div{
             width: 300px;
         }
         .products div img{
