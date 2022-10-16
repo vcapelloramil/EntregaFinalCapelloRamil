@@ -1684,6 +1684,108 @@ ul{
     .hero div h1{
         font-size: 55px;
     }
+    .hero{
+        background-image: url(../img/heroSection/montereyMobile.jpg);
+        width: 100%;
+        /* height: 90vh; */
+        height: calc(100vh - 50px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .iphoneCover{
+        background-image: url(../img/heroIphone14Pro2.png);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .iphoneCover div h2{
+        color: white;
+        font-size: 60px;
+        /* font-weight: bolder; */
+        margin-bottom: 20px;
+    }
+    .iphoneCover div h3{
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 35px;
+    }
+    .iphoneText{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: #9613dd;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .iphoneCircle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-image: linear-gradient(90deg,#2c1f89,#5715cf 24%,#9613dd 45%,#a411dc 76%,#e068a6);
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .iphoneButton:hover .iphoneText{
+        color: #9613dd;
+    }
+    .ipadCover{
+        background-image: url(../img/backgroundPinkMobile.jpg);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .text{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: white;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .circle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .ipadButton:hover .text{
+        color: white;
+    }
+    .hero div h1{
+        font-size: 55px;
+    }
     .products{
         display: flex;
         justify-content:center;
