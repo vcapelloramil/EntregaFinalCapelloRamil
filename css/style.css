@@ -99,50 +99,6 @@ header nav ul{
 header nav a img{
     height: 24px;
 }
-/* header nav ul li a{
-    text-decoration: none;
-    color:  grey;
-    font-size: 1em;
-    font-weight: 600px;
-    padding: 9px 10px;
-    transition: 0.5s;
-} */
-
-/* .hoverBlack a:hover{
-    color:  rgb(255, 255, 255);
-    border-radius: 500px;
-    background-color: black;
-}
-.hoverYellow a:hover{
-    color: white;
-    transition: 0.5s;
-    border-radius: 500px;
-    background-color: #d48207;
-}
-.hoverOrange a:hover{
-    color: white;
-    transition: 0.5s;
-    border-radius: 500px;
-    background-color: #e36a42;
-}
-.hoverRed a:hover{
-    color: white;
-    transition: 0.5s;
-    border-radius: 500px;
-    background-color: #b72c31;
-}
-.hoverPurple a:hover{
-    color: white;
-    transition: 0.5s;
-    border-radius: 500px;
-    background-color: #353a71;
-}
-.hoverBlue a:hover{
-    color: white;
-    transition: 0.5s;
-    border-radius: 500px;
-    background-color: #25476d;
-} */
 
 /**-------------MAIN--------------*/
 main{
@@ -246,26 +202,6 @@ Viewport: se utilizan para layouts responsivos.
 .heroWrapper .heroButton:nth-child(1) span{
     color: rgb(71, 71, 71);
 }
-
-/* .hero div a{
-    color: white;
-    background-image: linear-gradient(90deg,#d48207,#e36a42 24%,#b72c31 45%,#353a71 76%,#25476d);
-    text-decoration: none;
-    padding: 12px;
-    border-radius: 100px;
-    margin-top: 20px;
-    font-size: 20px;
-    font-family: Styrene A Web, sans-serif;
-    font-weight: 400px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    padding: 12px;
-}
-.hero div a:hover{
-    color: #ffffff;
-    padding: 18px 18px 18px 18px;
-} */
-
 /*! --BEST SELLERS/NEWEST DEVICES/ON SALE-- */
 .productsTitle{
     display: flex;
@@ -310,13 +246,6 @@ Viewport: se utilizan para layouts responsivos.
     margin-top: 20px;
     margin-bottom: 100px;
 }
-/* .products div h2{
-    color: black;
-    font-size: 45px;
-    text-align: center;
-    margin-bottom: 20px;
-} */
-
 .products div a{
     position: relative;
     text-decoration: none;
@@ -344,20 +273,6 @@ Viewport: se utilizan para layouts responsivos.
     transform: scaleX(1);
     transform-origin: left;
 }
-/* .products div a{
-    text-decoration: none;
-    color: black;
-    font-weight: 800px;
-    font-size: 20px;
-    border: 1px solid rgb(150, 150, 150);
-    border-radius: 20px;
-    padding: 8px;
-    transition: 0.5s;
-}
-.products div a:hover{
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-} */
 .products div h3{
     font-size: x-large;
     color: black;
@@ -655,20 +570,6 @@ Viewport: se utilizan para layouts responsivos.
     transform: scaleX(1);
     transform-origin: left;
 }
-/* .products2 div a{
-    text-decoration: none;
-    color: black;
-    font-weight: 800px;
-    font-size: 20px;
-    border: 1px solid rgb(150, 150, 150);
-    border-radius: 20px;
-    padding: 8px;
-    transition: 0.5s;
-}
-.products2 div a:hover{
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-} */
 .products2 div h3{
     font-size: x-large;
     color: black;
@@ -719,14 +620,6 @@ Viewport: se utilizan para layouts responsivos.
     margin-top: 30px;
     margin-bottom: 100px;
 }
-
-/* .saleProducts div h2{
-    color: black;
-    font-size: 45px;
-    text-align: center;
-    margin-bottom: 20px;
-} */
-
 .saleProductsTitle div a{
     position: relative;
     text-decoration: none;
@@ -783,20 +676,6 @@ Viewport: se utilizan para layouts responsivos.
     transform: scaleX(1);
     transform-origin: left;
 }
-/* .productsOnSale div a{
-    text-decoration: none;
-    color: black;
-    font-weight: 800px;
-    font-size: 20px;
-    border: 1px solid rgb(150, 150, 150);
-    border-radius: 20px;
-    padding: 8px;
-    transition: 0.5s;
-}
-.productsOnSale div a:hover{
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-} */
 .saleProducts div h3{
     font-size: x-large;
     color: black;
@@ -877,21 +756,6 @@ Viewport: se utilizan para layouts responsivos.
     transform: scaleX(1);
     transform-origin: left;
 }
-/* .shopProducts div a{
-    text-decoration: none;
-    color: black;
-    font-weight: 800px;
-    font-size: 20px;
-    border: 1px solid rgb(150, 150, 150);
-    border-radius: 20px;
-    padding: 8px;
-}
-.shopProducts div a:hover{
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-    transition: 0.5s;
-    padding: 10px 10px 10px 10px;
-} */
 .shopProducts{
     text-align: center;
 }
@@ -1414,239 +1278,8 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
-/* .foot{
-    display: flex;
-    justify-content: center;
-    text-align: start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    padding-bottom: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
-    height: 250px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.footerLogo div{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.footerLogo div{
-    margin-top: 20px;
-    margin-left: 700px;
-}
-.footerLogo div a img{
-    height: 32px;
-}
-
-.wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    margin-top: 200px;
-    height: 150px;
-}
-.wrapper .button{
-    height: 60px;
-    width: 60px;
-    float: left;
-    margin: 0 5px;
-    overflow: hidden;
-    background: #fff;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    transition: all 0.4s ease-out;
-}
-.wrapper .button:hover{
-    width: 200px;
-}
-.wrapper .button .icon{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    transition: all 0.4s ease-out;
-}
-.wrapper .button:nth-child(1):hover .icon{
-    background: #4267B2;
-}
-.wrapper .button:nth-child(2):hover .icon{
-    background: #1da1f2;
-}
-.wrapper .button:nth-child(3):hover .icon{
-    background: #e1306c;
-}
-.wrapper .button:nth-child(4):hover .icon{
-    background: #333;
-}
-.wrapper .button:nth-child(5):hover .icon{
-    background: #ff0000;
-}
-
-.wrapper .button .icon i{
-    font-size: 25px;
-    line-height: 60px;
-    transition: all 0.4s ease-out;
-    color: black;
-}
-.wrapper .button:hover .icon i{
-    color: #fff;
-}
-.wrapper .button{
-    text-decoration: none;
-}
-.wrapper .button span{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-    margin-left: 10px;
-    color: black;
-    transition: all 0.4s ease-out;
-}
-.wrapper .button:nth-child(1) span{
-    color: #4267B2;
-}
-.wrapper .button:nth-child(2) span{
-    color: #1da1f2;
-}
-.wrapper .button:nth-child(3) span{
-    color: #e1306c;
-}
-.wrapper .button:nth-child(4) span{
-    color: #333;
-}
-.wrapper .button:nth-child(5) span{
-    color: #ff0000;
-}
-
-.footerShop{
-    display: flex;
-    justify-content: center;
-    text-align: start;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.footerShop ul{
-    width: 300px;
-}
-.footerShop ul li{
-    margin-left: 20px;
-}
-.footerAbout{
-    display: flex;
-    justify-content: center;
-    text-align: start;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.footerAbout ul{
-    width: 300px;
-    height: 200px;
-}
-.footerAbout ul li{
-    margin-left: 20px;
-}
-
-.storeLocation div{
-    width: 300px;
-    margin-bottom: 20px;
-}
-.storeLocation div h3{
-    margin-left: 20px;
-}
-.storeLocation div a{
-    margin-left: 20px;
-}
-
-.footerContact div{
-    width: 300px;
-    height: 200px;
-}
-
-.footerContact ul{
-    margin-bottom: 20px;
-}
-.footerContact div div{
-    margin-left: 2rem;
-}
-
-.foot h3{
-    font-size: 25px;
-    margin-bottom: 15px;
-    color: #1d1d1f;
-}
-.foot div input[type=email]{
-    width: 110px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: #f5f5f7;
-    padding: 12px 20px 12px 5px;
-    transition: width 0.4s ease-in-out
-}
-.foot form input[type=submit]{
-    background-color: #f5f5f7;
-    border: black 1px solid;
-    color: black;
-    margin-left: 20px;
-    padding: 14px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.5s;
-}
-.foot form input[type=submit]:hover{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.foot div div a{
-    text-decoration: none;
-    color: #6e6e73;
-}
-
-.foot ul li{
-    list-style: none;
-    margin-bottom: 10px;
-}
-.foot ul li a{
-    text-decoration: none;
-    color: #6e6e73;
-    font-size: larger;
-}
-.copyright{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-.copyright div{
-    font-size: 20px;
-} */
-
 /*! -----------MEDIA QUERY-------------*/
 
-@media screen and (max-width:1700px){
-    /* .footerShop ul{
-        width: 275px;
-    }
-    .storeLocation div{
-        width: 275px;
-    }
-    .footerAbout ul{
-        width: 275px;
-    }
-    .footerContact div{
-        width: 275px;
-    } */
-}
 @media screen and (max-width:1600px){
     .ipadCover{
         background-image: url(../img/backgroundPink.jpg);
@@ -1937,19 +1570,6 @@ ul{
         width: 320px;
         height: 320px;
     }
-
-    /* .footerShop ul{
-        width: 215px;
-    }
-    .storeLocation div{
-        width: 215px;
-    }
-    .footerAbout ul{
-        width: 215px;
-    }
-    .footerContact div{
-        width: 215px;
-    } */
 }
 @media screen and (max-width:1024px){
     .hero div h1{
@@ -2115,26 +1735,6 @@ ul{
         align-items: center;
         background-attachment: scroll;
     }
-    /* .hero{
-        background-image: url(../img/heroSection/imacHero2.jpg);
-        width: 100%;
-        height: 90vh;
-        height: calc(100vh - 50px);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-attachment: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
-    /* .iphoneCover{
-        background-image: url(../img/heroIphone14Pro2.png);
-        display: flex;
-        width: 100%;
-        height: 80vh;
-        background-size: cover;
-    } */
     .iphoneText{
         font-size: 1.2rem;
         position: absolute;
@@ -2214,52 +1814,6 @@ ul{
         width: 50%;
         margin-bottom: 30px;
     }
-
-
-
-
-    .foot{
-        display: flex;
-        justify-content: center;
-        text-align: start;
-        /* flex-direction: row; */
-        flex-wrap: wrap;
-        /* margin-top: 50px; */
-        /* padding-bottom: 30px; */
-        /* margin-left: 200px;
-        margin-right: 200px; */
-        /* height: 250px; */
-        /* padding-left: 50px;
-        padding-right: 50px; */
-    }
-    /* .footerShop ul{
-        width: 260px;
-        height: 230px;
-    }
-    .storeLocation div{
-        width: 260px;
-        padding-left: 2rem;
-    }
-    .footerAbout ul{
-        width: 260px;
-        height: 210px;
-    }
-    .footerContact div{
-        width: 260px;
-        height: 110px;
-        padding-left: 0.5rem;
-    }
-    .footerContact ul{
-        padding-left: 3rem;
-    }
-    .wrapper{
-        align-items: flex-end;
-        height: 300px;
-    }
-    .copyright div{
-        margin-top: 80px;
-        width: 400px;
-    } */
 }
 @media screen and (max-width:574px){
     .gridContainer{
@@ -2302,20 +1856,6 @@ ul{
     .titleShop h2{
         font-size: 50px;
     }
-    /* .footerShop ul{
-        width: 220px;
-    }
-    .footerAbout ul{
-        width: 220px;
-        padding-left: 1rem;
-    }
-    .footerContact div{
-        width: 220px;
-    }
-    .storeLocation div{
-        width: 220px;
-        padding-left: 1rem;
-    } */
     @media screen and (max-width:500px){
         .hero div h1{
             font-size: 24px;
