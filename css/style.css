@@ -478,13 +478,13 @@ Viewport: se utilizan para layouts responsivos.
     justify-content:center;
     align-items:center;
     text-align: center;
-    margin-top: 100px;
 }
 .products2Title div h2{
     color: black;
     font-size: 45px;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 .products2Title div a{
