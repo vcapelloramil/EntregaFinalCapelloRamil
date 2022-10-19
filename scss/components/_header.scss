@@ -1,0 +1,38 @@
+header{
+    background-color: rgba(255, 255, 255, 0.72);
+    position: sticky;
+    top: 0;
+    grid-area: header;
+    z-index: 1;
+    .navbar{
+        .navbar-nav{
+            margin: 0 auto;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+        }
+        a{
+            img{
+                height: 24px;
+            }
+        }
+        div{
+            div{
+                .d-flex{
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 50px;
+                    .fa-user-circle{
+                        font-size: 25px;
+                        color: grey;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

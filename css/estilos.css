@@ -15,6 +15,28 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 56px auto 400px;
   gap: 0px 0px;
-  grid-template-areas: "header header"
-  "main main"
-  "footer footer"; }
+  grid-template-areas: "header header" "main main" "footer footer"; }
+
+header {
+  background-color: rgba(255, 255, 255, 0.72);
+  position: sticky;
+  top: 0;
+  grid-area: header;
+  z-index: 1; }
+  header .navbar .navbar-nav {
+    margin: 0 auto; }
+  header .navbar ul {
+    display: flex;
+    align-items: center; }
+  header .navbar a img {
+    height: 24px; }
+  header .navbar div div .d-flex {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px; }
+    header .navbar div div .d-flex .fa-user-circle {
+      font-size: 25px;
+      color: grey; }
+      header .navbar div div .d-flex .fa-user-circle:hover {
+        color: black; }
