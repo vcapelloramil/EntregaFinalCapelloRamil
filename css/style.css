@@ -170,7 +170,7 @@ Viewport: se utilizan para layouts responsivos.
     line-height: 60px;
     transition: all 0.5s ease-out;
 }
-.heroWrapper .heroButton:nth-child(1):hover .heroIcon{
+.heroWrapper .heroButton:hover{
     background-color: grey;
     /* background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
@@ -182,13 +182,13 @@ Viewport: se utilizan para layouts responsivos.
     transition: all 0.5s ease-out;
     color: black;
 }
-.heroWrapper .heroButton:hover .heroIcon i{
+.heroWrapper .heroButton .heroIcon:hover i{
     color: #fff;
 }
 .heroWrapper .heroButton{
     text-decoration: none;
 }
-.heroWrapper .heroButton span{
+/* .heroWrapper .heroButton span{
     font-size: 20px;
     font-weight: 500;
     line-height: 60px;
@@ -198,10 +198,10 @@ Viewport: se utilizan para layouts responsivos.
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.5s ease-out;
-}
-.heroWrapper .heroButton:nth-child(1) span{
+} */
+/* .heroWrapper .heroButton:nth-child(1) span{
     color: rgb(71, 71, 71);
-}
+} */
 /*! --BEST SELLERS/NEWEST DEVICES/ON SALE-- */
 .productsTitle{
     display: flex;

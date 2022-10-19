@@ -41,6 +41,427 @@ header {
       header .navbar div div .d-flex .fa-user-circle:hover {
         color: black; }
 
+main {
+  grid-area: main; }
+  main .hero {
+    background-image: url(../img/heroSection/monterey.jpg);
+    width: 100%;
+    /* height: 90vh; */
+    height: calc(100vh - 50px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .hero div h1 {
+      color: white;
+      /* background-color: rgba(255, 255, 255, 0.5); */
+      border-radius: 10px;
+      font-size: 65px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      font-family: Styrene A Web, sans-serif; }
+    main .hero div .heroWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 20px; }
+      main .hero div .heroWrapper .heroButton {
+        height: 60px;
+        width: 60px;
+        float: left;
+        margin: 0 5px;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease-out;
+        text-decoration: none; }
+        main .hero div .heroWrapper .heroButton:hover {
+          background-color: grey; }
+        main .hero div .heroWrapper .heroButton .heroIcon {
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          text-align: center;
+          border-radius: 50px;
+          box-sizing: border-box;
+          line-height: 60px;
+          transition: all 0.5s ease-out; }
+          main .hero div .heroWrapper .heroButton .heroIcon i {
+            font-size: 25px;
+            line-height: 60px;
+            transition: all 0.5s ease-out;
+            color: black; }
+          main .hero div .heroWrapper .heroButton .heroIcon:hover {
+            color: #fff; }
+  main .productsTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    main .productsTitle div {
+      width: 450px; }
+      main .productsTitle div h2 {
+        color: black;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 100px; }
+      main .productsTitle div p {
+        font-style: italic;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px; }
+  main .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; }
+    main .products div {
+      text-align: center;
+      width: 450px;
+      border-radius: 40px;
+      border: #ffffff 10px solid;
+      margin-top: 20px;
+      margin-bottom: 100px; }
+      main .products div img {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 20px; }
+      main .products div a {
+        position: relative;
+        text-decoration: none;
+        /* font-family: 'SamsungOne',arial,sans-serif; */
+        color: black;
+        font-size: 20px;
+        letter-spacing: 0.5px; }
+        main .products div a::after {
+          content: "";
+          position: absolute;
+          background-color: black;
+          height: 2px;
+          width: 100%;
+          left: 0;
+          bottom: -5px;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 250ms ease-in; }
+        main .products div a:hover {
+          font-weight: bold; }
+        main .products div a:hover:after {
+          transform: scaleX(1);
+          transform-origin: left; }
+      main .products div h3 {
+        font-size: x-large;
+        color: black; }
+      main .products div p {
+        font-style: italic;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px; }
+  main .iphoneCover {
+    background-image: url(../img/heroIphone14Pro.png);
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed; }
+    main .iphoneCover div {
+      text-align: center; }
+      main .iphoneCover div h2 {
+        color: black;
+        font-size: 60px;
+        margin-bottom: 20px; }
+      main .iphoneCover div h3 {
+        color: black;
+        font-size: 30px;
+        margin-bottom: 35px; }
+      main .iphoneCover div div .iphoneButton {
+        position: relative;
+        border: 0;
+        display: inline-block;
+        width: 12rem;
+        height: auto;
+        cursor: pointer;
+        outline: none;
+        vertical-align: middle;
+        background: transparent; }
+        main .iphoneCover div div .iphoneButton:hover .iphoneCircle {
+          position: relative;
+          display: block;
+          margin: 0;
+          width: 3rem;
+          height: 3rem;
+          background-image: linear-gradient(90deg, #2c1f89, #5715cf 24%, #9613dd 45%, #a411dc 76%, #e068a6);
+          border-radius: 1.625rem;
+          transition: all 0.4s ease-in-out;
+          width: 100%; }
+          main .iphoneCover div div .iphoneButton:hover .iphoneCircle .iphoneIcon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: black; }
+          main .iphoneCover div div .iphoneButton:hover .iphoneCircle .iphoneArrow {
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+            transition: all 0.4s ease-in-out;
+            background: white;
+            transform: translateX(1rem); }
+            main .iphoneCover div div .iphoneButton:hover .iphoneCircle .iphoneArrow::before {
+              content: "";
+              position: absolute;
+              top: -0.25rem;
+              right: 0.0625rem;
+              width: 0.625rem;
+              height: 0.625rem;
+              border-top: 0.125rem solid white;
+              border-right: 0.125rem solid white;
+              transform: rotate(45deg); }
+        main .iphoneCover div div .iphoneButton:hover .iphoneText {
+          color: white; }
+  main .ipadCover {
+    background-image: url(../img/heroSection/coverIpad3.png);
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed; }
+    main .ipadCover div {
+      text-align: center; }
+      main .ipadCover div h2 {
+        color: white;
+        font-size: 60px;
+        margin-bottom: 20px; }
+      main .ipadCover div h3 {
+        color: white;
+        font-size: 30px;
+        margin-bottom: 40px; }
+      main .ipadCover div div .ipadButton {
+        position: relative;
+        border: 0;
+        display: inline-block;
+        width: 12rem;
+        height: auto;
+        cursor: pointer;
+        outline: none;
+        vertical-align: middle;
+        background: transparent; }
+        main .ipadCover div div .ipadButton:hover .circle {
+          position: relative;
+          display: block;
+          margin: 0;
+          width: 3rem;
+          height: 3rem;
+          background-color: white;
+          border-radius: 1.625rem;
+          transition: all 0.4s ease-in-out;
+          width: 100%; }
+          main .ipadCover div div .ipadButton:hover .circle .ipadIcon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: black; }
+          main .ipadCover div div .ipadButton:hover .circle .ipadArrow {
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+            transition: all 0.4s ease-in-out;
+            background: black;
+            transform: translateX(1rem); }
+            main .ipadCover div div .ipadButton:hover .circle .ipadArrow::before {
+              content: "";
+              position: absolute;
+              top: -0.25rem;
+              right: 0.0625rem;
+              width: 0.625rem;
+              height: 0.625rem;
+              border-top: 0.125rem solid black;
+              border-right: 0.125rem solid black;
+              transform: rotate(45deg); }
+        main .ipadCover div div .ipadButton:hover .text {
+          color: black; }
+  main .products2Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    main .products2Title div h2 {
+      color: black;
+      font-size: 45px;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 100px; }
+    main .products2Title div a {
+      position: relative;
+      text-decoration: none;
+      /* font-family: 'SamsungOne',arial,sans-serif; */
+      color: black;
+      font-size: 20px;
+      letter-spacing: 0.5px; }
+      main .products2Title div a:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in; }
+      main .products2Title div a:hover {
+        font-weight: bold; }
+      main .products2Title div a:hover:after {
+        transform: scaleX(1);
+        transform-origin: left; }
+  main .products2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .products2 div {
+      text-align: center;
+      width: 500px;
+      /* height: 700px; */
+      /* background-color: grey; */
+      border-radius: 40px;
+      border: #ffffff 25px solid;
+      margin-top: 30px;
+      margin-bottom: 100px; }
+      main .products2 div img {
+        height: 300px;
+        width: 250px; }
+      main .products2 div h2 {
+        color: black;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 20px; }
+      main .products2 div a {
+        position: relative;
+        text-decoration: none;
+        /* font-family: 'SamsungOne',arial,sans-serif; */
+        color: black;
+        font-size: 20px;
+        letter-spacing: 0.5px; }
+        main .products2 div a:after {
+          content: "";
+          position: absolute;
+          background-color: black;
+          height: 2px;
+          width: 100%;
+          left: 0;
+          bottom: -5px;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 250ms ease-in; }
+        main .products2 div a:hover {
+          font-weight: bold; }
+        main .products2 div a:hover:after {
+          transform: scaleX(1);
+          transform-origin: left; }
+      main .products2 div h3 {
+        font-size: x-large;
+        color: black;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+      main .products2 div p {
+        font-style: italic;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px; }
+  main .saleProductsTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    main .saleProductsTitle div h2 {
+      color: black;
+      font-size: 45px;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 100px; }
+    main .saleProductsTitle div a {
+      position: relative;
+      text-decoration: none;
+      /* font-family: 'SamsungOne',arial,sans-serif; */
+      color: black;
+      font-size: 20px;
+      letter-spacing: 0.5px; }
+      main .saleProductsTitle div a:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in; }
+      main .saleProductsTitle div a:hover {
+        font-weight: bold; }
+      main .saleProductsTitle div a:hover:after {
+        transform: scaleX(1);
+        transform-origin: left; }
+  main .saleProducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; }
+    main .saleProducts div img {
+      height: 400px;
+      width: 400px; }
+    main .saleProducts div a {
+      position: relative;
+      text-decoration: none;
+      /* font-family: 'SamsungOne',arial,sans-serif; */
+      color: black;
+      font-size: 20px;
+      letter-spacing: 0.5px; }
+      main .saleProducts div a:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in; }
+      main .saleProducts div a:hover {
+        font-weight: bold; }
+      main .saleProducts div a:hover:after {
+        transform: scaleX(1);
+        transform-origin: left; }
+    main .saleProducts div h3 {
+      font-size: x-large;
+      color: black; }
+    main .saleProducts div p {
+      font-style: italic;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 30px; }
+
 footer {
   grid-area: footer;
   background-color: #646568;
