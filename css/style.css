@@ -2286,7 +2286,7 @@ ul{
     .supportData div{
         text-align:left;
         width: 300px;
-        height: 400px;
+        height: 300px;
         /* border-top: hsla(0,0%,63%,.25) 2px solid; */
         margin-top: 50px;
         margin-bottom: 80px;
@@ -2299,7 +2299,7 @@ ul{
     .supportData2 div{
         text-align:left;
         width: 300px;
-        height: 450px;
+        height: 350px;
         /* border-top: hsla(0,0%,63%,.25) 2px solid; */
         margin-top: 50px;
         margin-bottom: 80px;
@@ -2312,7 +2312,7 @@ ul{
     .supportData3 div{
         text-align:left;
         width: 300px;
-        height: 500px;
+        height: 400px;
         /* border-top: hsla(0,0%,63%,.25) 2px solid; */
         margin-top: 50px;
         margin-bottom: 80px;
