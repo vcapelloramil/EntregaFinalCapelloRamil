@@ -43,14 +43,14 @@ html{
 }
 
 .gridContainer{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 56px auto 400px; 
-    gap: 0px 0px; 
-    grid-template-areas: 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 56px auto 400px;
+    gap: 0px 0px;
+    grid-template-areas:
     "header header"
     "main main"
-    "footer footer"; 
+    "footer footer";
 }
 
 /**------------HEADER-------------*/
@@ -59,7 +59,7 @@ html{
 }
 .navbar{
     /* background-color: rgba(255, 255, 255, 0.30);
-    backdrop-filter: saturate(180%) blur(20px); 
+    backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 1px solid #c7c8ca; */
     background-color: white;
 }
@@ -1170,6 +1170,7 @@ Viewport: se utilizan para layouts responsivos.
     flex-direction: column;
 }
 .aboutCover div{
+    width: 500px;
     text-align:center;
     margin-top: 100px;
 }
@@ -1181,10 +1182,11 @@ Viewport: se utilizan para layouts responsivos.
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .text1 div{
     text-align: left;
-    height: 300px;
+    height: 500px;
     width: 1150px;
     margin-top: 100px;
 }
@@ -1198,14 +1200,13 @@ Viewport: se utilizan para layouts responsivos.
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-color: #9613dd;
+    /* flex-direction: column; */
 }
 .text2 div{
-    background-color: #9613dd;
     text-align: left;
-    height: 620px;
-    width: 100%;
-    margin-top: 100px;
+    height: 700px;
+    width: 1150px;
 }
 .text2 div h2{
     color: white;
@@ -1217,8 +1218,8 @@ Viewport: se utilizan para layouts responsivos.
 .text2 div p{
     color: white;
     font-size: 30px;
-    margin-left: 350px;
-    margin-right: 350px;
+    /* margin-left: 350px;
+    margin-right: 350px; */
     margin-bottom: 50px;
     text-align: left;
 }
@@ -1230,13 +1231,14 @@ Viewport: se utilizan para layouts responsivos.
     flex-direction: row;
 }
 .aboutImages div{
-    height: 430px;
-    margin-top: 30px;
-    margin-inline: 20px;
+    height: 400px;
+    margin-inline: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .aboutImages div img{
     height: 400px;
-    width: 750px;
+    width: 400px;
 }
 
 /**---------FOOTER-----------------*/
@@ -1330,11 +1332,42 @@ ul{
 	background-color: #ffffff;
 }
 /*! -----------MEDIA QUERY-------------*/
-
+@media screen and (max-width:1900px){
+    /* .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 800px;
+        width: 2000px;
+        margin-top: 100px;
+    }
+    .text2 div h2{
+        color: white;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .text2 div p{
+        color: white;
+        font-size: 30px;
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-bottom: 50px;
+        text-align: left;
+    } */
+}
 @media screen and (max-width:1600px){
     .ipadCover{
         background-image: url(../img/backgroundPink.jpg);
     }
+    /* ---ABOUT--- */
+    /* .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 900px;
+        width: 1900px;
+        margin-top: 100px;
+    } */
 }
 @media screen and (max-width:1440px){
     .products div{
@@ -1507,17 +1540,43 @@ ul{
         justify-content: center;
         align-items: center;
     }
+    /* ------------ABOUT--------- */
+    .aboutCover{
+        background-image: url(../img/iphone14HeroMobile2.jpg);
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content:start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text1 div{
+        text-align: left;
+        height: 650px;
+        width: 900px;
+        margin-top: 100px;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 850px;
+        width: 900px;
+        /* margin-top: 100px; */
+    }
 }
 @media screen and (max-width:1200px){
     .gridContainer{
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 56px auto 400px; 
-        gap: 0px 0px; 
-        grid-template-areas: 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 56px auto 400px;
+        gap: 0px 0px;
+        grid-template-areas:
         "header header"
         "main main"
-        "footer footer"; 
+        "footer footer";
     }
     .hero div h1{
         font-size: 55px;
@@ -1654,6 +1713,23 @@ ul{
     .saleProducts div img{
         width: 320px;
         height: 320px;
+    }
+    /* --------ABOUT--------*/
+    .text1 div{
+        text-align: left;
+        height: 850px;
+        width: 600px;
+        margin-top: 100px;
+    }
+    .text2 div h2{
+        text-align: left;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 1000px;
+        width: 600px;
+        /* margin-top: 100px; */
     }
 }
 @media screen and (max-width:1024px){
@@ -1822,17 +1898,43 @@ ul{
         margin-top: 50px;
         margin-bottom: 50px;
     }
+    /* ----------ABOUT------- */
+    .aboutCover{
+        background-image: url(../img/iphone14HeroMobile.jpg);
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content:start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text1 div{
+        text-align: left;
+        height: 850px;
+        width: 600px;
+        margin-top: 100px;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 1000px;
+        width: 600px;
+        /* margin-top: 100px; */
+    }
 }
 @media screen and (max-width:767px){
     .gridContainer{
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 56px auto 600px; 
-        gap: 0px 0px; 
-        grid-template-areas: 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 56px auto 600px;
+        gap: 0px 0px;
+        grid-template-areas:
         "header"
         "main"
-        "footer"; 
+        "footer";
     }
     .hero{
         background-image: url(../img/heroSection/montereyMobile.jpg);
@@ -1933,7 +2035,7 @@ ul{
     .ipadButton:hover .text{
         color: white;
     }
-    
+
     .hero div h1{
         font-size: 45px;
     }
@@ -1994,52 +2096,66 @@ ul{
         width: 400px;
         height: 900px;
     }
-        /* -------HELP-------- */
-        .supportCover{
-            background-image: url(../img/coverSoporte2.jpg);
-            display: flex;
-            width: 100%;
-            height: 50vh;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            justify-content: center;
-            align-items: center;
-        }
-        .supportCover div{
-            text-align: center;
-            margin-right: 0px;
-        }
-        .supportIcons{
-            display: flex;
-            justify-content:center;
-            align-items:center;
-            flex-wrap:nowrap;
-            flex-direction: column;
-        }
-        .supportIcons div img{
-            height: 75px;
-            width: 75px;
-            margin-bottom: 30px;
-        }
-        .supportIcons div{
-            text-align:center;
-            width: 200px;
-            height: 100px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
+    /* -------HELP-------- */
+    .supportCover{
+        background-image: url(../img/coverSoporte2.jpg);
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+    .supportCover div{
+        text-align: center;
+        margin-right: 0px;
+    }
+    .supportIcons{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:nowrap;
+        flex-direction: column;
+    }
+    .supportIcons div img{
+        height: 75px;
+        width: 75px;
+        margin-bottom: 30px;
+    }
+    .supportIcons div{
+        text-align:center;
+        width: 200px;
+        height: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    /* -----ABOUT------- */
+    .text1 div{
+        text-align: left;
+        height: 1200px;
+        width: 400px;
+        margin-top: 100px;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 1400px;
+        width: 400px;
+        /* margin-top: 100px; */
+    }
 }
 @media screen and (max-width:574px){
     .gridContainer{
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 56px auto 1000px; 
-        gap: 0px 0px; 
-        grid-template-areas: 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 56px auto 1000px;
+        gap: 0px 0px;
+        grid-template-areas:
         "header"
         "main"
-        "footer"; 
+        "footer";
     }
     .hero div h1{
         color: white;
@@ -2149,6 +2265,50 @@ ul{
         height: 200px;
         width: 350px;
         margin-top: 50px;
+    }
+    /* --------ABOUT-------- */
+    .aboutCover div{
+        width: 400px;
+        text-align:center;
+        margin-top: 100px;
+    }
+    .aboutCover div h1{
+        color: white;
+        font-size: 40px;
+    }
+    .text1 div{
+        text-align: left;
+        height: 900px;
+        width: 300px;
+        margin-top: 100px;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 1000px;
+        width: 300px;
+        /* margin-top: 100px; */
+    }
+    .text1 div p{
+        color: #9613dd;
+        background-color: white;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .text2 div h2{
+        color: white;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-align: left;
+    }
+    .text2 div p{
+        color: white;
+        font-size: 20px;
+        /* margin-left: 350px;
+        margin-right: 350px; */
+        margin-bottom: 50px;
+        text-align: left;
     }
 }
 @media screen and (max-width:500px){
@@ -2321,7 +2481,57 @@ ul{
         height: 200px;
         width: 300px;
         margin-top: 150px;
-    }   
+    }
+    /*-------------ABOUT------------*/
+    .aboutCover div{
+        width: 300px;
+        text-align:center;
+        margin-top: 100px;
+    }
+    .aboutCover div h1{
+        color: white;
+        font-size: 40px;
+    }
+    .text1 div{
+        text-align: left;
+        height: 900px;
+        width: 300px;
+        margin-top: 100px;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 1000px;
+        width: 300px;
+    }
+    .text1 div p{
+        color: #9613dd;
+        background-color: white;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .text2 div h2{
+        color: white;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-align: left;
+    }
+    .text2 div p{
+        color: white;
+        font-size: 20px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+    .aboutImages div{
+        height: 300px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .aboutImages div img{
+        height: 300px;
+        width: 300px;
+    }
 }
 @media screen and (max-width:380px){
     .products div{
@@ -2331,7 +2541,7 @@ ul{
         width: 250px;
     }
     .saleProducts div{
-        width: 250px;   
+        width: 250px;
     }
     /* ----CONTACT------ */
     .asideContact ul{
@@ -2348,4 +2558,5 @@ ul{
     .asideContact ul li{
         width: 140px;
     }
+
 }
