@@ -2494,7 +2494,7 @@ ul{
     }
     .text1 div{
         text-align: left;
-        height: 900px;
+        height: 750px;
         width: 300px;
         margin-top: 100px;
     }
@@ -2507,7 +2507,7 @@ ul{
     .text1 div p{
         color: #9613dd;
         background-color: white;
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 30px;
     }
     .text2 div h2{
