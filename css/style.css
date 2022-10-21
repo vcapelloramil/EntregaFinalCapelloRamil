@@ -771,7 +771,7 @@ Viewport: se utilizan para layouts responsivos.
     display: flex;
     width: 100%;
     height: 45vh;
-    background-size: 110%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
@@ -825,8 +825,8 @@ Viewport: se utilizan para layouts responsivos.
     text-decoration: none;
 }
 .asideContact form{
-    width: 800px;
-    height: 700px;
+    width: 700px;
+    height: 900px;
 }
 .asideContact form div{
     margin-right: 20px;
@@ -1422,6 +1422,28 @@ ul{
         width: 320px;
         height: 320px;
     }
+    /* ---CONTACT--- */
+    .contactCover{
+        background-image: url(../img/backgroundContact2.jpg);
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+    .asideContact ul{
+        list-style: none;
+        width: 300px;
+        height: 900px;
+        background-color: #538590;
+    }
+    .asideContact form{
+        width: 600px;
+        height: 900px;
+    }
 }
 @media screen and (max-width:1200px){
     .gridContainer{
@@ -1674,6 +1696,52 @@ ul{
     .ipadButton:hover .text{
         color: white;
     }
+    /* -----CONTACT----- */
+    .contactCover{
+        background-image: url(../img/backgroundContact3.jpg);
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+    .asideContact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 60px;
+    }
+    .asideContact ul{
+        text-align: center;
+        list-style: none;
+        width: 600px;
+        height: 600px;
+        background-color: #538590;
+    }
+    .asideContact ul li h2{
+        font-size: 35px;
+        margin-top: 80px;
+        color: white;
+    }
+    .contactCover div{
+        text-align: center;
+    }
+    .contactCover div h1{
+        color: white;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .contactCover div p{
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: Raleway;
+        text-transform: uppercase;
+    }
 }
 @media screen and (max-width:767px){
     .gridContainer{
@@ -1814,6 +1882,38 @@ ul{
         width: 50%;
         margin-bottom: 30px;
     }
+    /* -----------CONTACT----------- */
+    .asideContact ul{
+        text-align: center;
+        list-style: none;
+        width: 400px;
+        height: 600px;
+        background-color: #538590;
+    }
+    .asideContact ul li h2{
+        font-size: 35px;
+        margin-top: 80px;
+        color: white;
+    }
+    .contactCover div{
+        text-align: center;
+    }
+    .contactCover div h1{
+        color: white;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .contactCover div p{
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: Raleway;
+        text-transform: uppercase;
+    }
+    .asideContact form{
+        width: 400px;
+        height: 900px;
+    }
 }
 @media screen and (max-width:574px){
     .gridContainer{
@@ -1856,57 +1956,170 @@ ul{
     .titleShop h2{
         font-size: 50px;
     }
-    @media screen and (max-width:500px){
-        .hero div h1{
-            font-size: 24px;
-        }
-        .shopProducts div{
-            /* border:1px solid hsla(0,0%,63%,.25); */
-            height: 500px;
-            width: 300px;
-        }
-        .productsTitle div{
-            width: 300px;
-        }
-        .products2Title div{
-            width: 300px;
-        }
-        .products div img{
-            width: 200px;
-            height: 200px;
-        }
-        .products2 div img{
-            width: 150px;
-            height: 200px;
-        }
-        .saleProducts div{
-            width: 300px;
-        }
-        .productsTitle div img{
-            width: 200px;
-            height: 200px;
-        }
-        .products2 div{
-            width: 300px;
-        }
-        .saleProducts div img{
-            width: 200px;
-            height: 200px;
-        }
+    /* -------CONTACT--------- */
+    .asideContact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 60px;
     }
-    @media screen and (max-width:360px){
-        .products div{
-            width: 250px;
-        }
-        .products2 div{
-            width: 250px;
-        }
-        .saleProducts div{
-            width: 250px;
-        }
+    .asideContact ul{
+        text-align: center;
+        list-style: none;
+        width: 300px;
+        height: 700px;
+        background-color: #538590;
+    }
+    .asideContact ul li h2{
+        font-size: 35px;
+        margin-top: 80px;
+        color: white;
+    }
+    .contactCover div{
+        text-align: center;
+    }
+    .contactCover div h1{
+        color: white;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .contactCover div p{
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: Raleway;
+        text-transform: uppercase;
+    }
+    .asideContact form{
+        width: 300px;
+        height: 1000px;
     }
 }
-
-
-
-
+@media screen and (max-width:500px){
+    .hero div h1{
+        font-size: 24px;
+    }
+    .shopProducts div{
+        /* border:1px solid hsla(0,0%,63%,.25); */
+        height: 500px;
+        width: 300px;
+    }
+    .productsTitle div{
+        width: 300px;
+    }
+    .products2Title div{
+        width: 300px;
+    }
+    .products div img{
+        width: 200px;
+        height: 200px;
+    }
+    .products2 div img{
+        width: 150px;
+        height: 200px;
+    }
+    .saleProducts div{
+        width: 300px;
+    }
+    .productsTitle div img{
+        width: 200px;
+        height: 200px;
+    }
+    .products2 div{
+        width: 300px;
+    }
+    .saleProducts div img{
+        width: 200px;
+        height: 200px;
+    }
+    /* -----CONTACT------ */
+    .contactCover div{
+        width: 200px;
+        text-align: center;
+    }
+    .contactCover div h1{
+        color: white;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .contactCover div p{
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: Raleway;
+        text-transform: uppercase;
+    }
+    .asideContact ul{
+        text-align: center;
+        list-style: none;
+        width: 250px;
+        height: 700px;
+        background-color: #538590;
+    }
+    .asideContact ul li{
+        width: 160px;
+    }
+    .asideContact ul li h2{
+        font-size: 25px;
+        margin-top: 80px;
+        color: white;
+    }
+    .asideContact ul li P{
+        font-size: 12px;
+    }
+    .asideContact ul li a{
+        font-size: 12px;
+    }
+    .contactCover div{
+        text-align: center;
+    }
+    .contactCover div h1{
+        color: white;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .contactCover div p{
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: Raleway;
+        text-transform: uppercase;
+    }
+    .asideContact form{
+        width: 250px;
+        height: 1000px;
+    }
+    .asideContact form h3{
+        font-size: 25px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:380px){
+    .products div{
+        width: 250px;
+    }
+    .products2 div{
+        width: 250px;
+    }
+    .saleProducts div{
+        width: 250px;   
+    }
+    /* ----CONTACT------ */
+    .asideContact ul{
+        text-align: center;
+        list-style: none;
+        width: 230px;
+        height: 700px;
+        background-color: #538590;
+    }
+    .asideContact form{
+        width: 230px;
+        height: 1000px;
+    }
+    .asideContact ul li{
+        width: 140px;
+    }
+}
