@@ -1,0 +1,53 @@
+@import "../base/variables";
+/* ^ ---------SHOP--------- */
+.titleShop {
+	@include flex (flex, center, center);
+	flex-direction: column;
+	h1 {
+		@include text (55px, center, 50px, 20px, none);
+	}
+	h2 {
+		font-size: 60px;
+		background: -webkit-linear-gradient(45deg,nth($colores, 13),nth($colores, 14) 24%,nth($colores, 15) 45%,nth($colores, 16) 76%,nth($colores, 17));
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+}
+.shopProducts {
+	@include flex (flex, center, center);
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+	text-align: center;
+	div {
+		img {
+			@include whSize (250px, 350px);
+		}
+		h3 {
+			font-size: x-large;
+			margin-bottom: 20px;
+		}
+		p {
+			@include text (18px, center, 0px, 25px, italic);
+		}
+		a {
+			color: nth($colores, 2);
+			@extend %link;
+			&:after {
+				background-color: nth($colores, 2);
+				@include whSize (100%, 2px);
+				@extend %linkAfter;
+			}
+			&:hover {
+				font-weight: bold;
+				&:after {
+					transform: scaleX(1);
+					transform-origin: left;
+				}
+			}
+		}
+		@include whSize (400px, 500px);
+	}
+}

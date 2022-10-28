@@ -1,0 +1,1229 @@
+/*! -----------MEDIA QUERY-------------*/
+@media screen and (max-width:1900px){
+    /* .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 800px;
+        width: 2000px;
+        margin-top: 100px;
+    }
+    .text2 div h2{
+        color: white;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .text2 div p{
+        color: white;
+        font-size: 30px;
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-bottom: 50px;
+        text-align: left;
+    } */
+}
+@media screen and (max-width:1600px){
+    .ipadCover{
+        background-image: url(../img/backgroundPink.jpg);
+    }
+    /* ---ABOUT--- */
+    /* .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 900px;
+        width: 1900px;
+        margin-top: 100px;
+    } */
+}
+@media screen and (max-width:1440px){
+    .products div{
+        width: 350px;
+    }
+    .hero{
+        background-image: url(../img/heroSection/montereyMobile.jpg);
+        width: 100%;
+        /* height: 90vh; */
+        height: calc(100vh - 50px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .iphoneCover{
+        background-image: url(../img/heroIphone14Pro2.png);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .iphoneCover div h2{
+        color: white;
+        font-size: 60px;
+        /* font-weight: bolder; */
+        margin-bottom: 20px;
+    }
+    .iphoneCover div h3{
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 35px;
+    }
+    .iphoneText{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: #9613dd;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .iphoneCircle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-image: linear-gradient(90deg,#2c1f89,#5715cf 24%,#9613dd 45%,#a411dc 76%,#e068a6);
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .iphoneButton:hover .iphoneText{
+        color: #9613dd;
+    }
+    .ipadCover{
+        background-image: url(../img/backgroundPinkMobile.jpg);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .text{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: white;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .circle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .ipadButton:hover .text{
+        color: white;
+    }
+    .hero div h1{
+        font-size: 55px;
+    }
+    .products{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .products div{
+        height: 450px;
+    }
+    .products2{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .products2 div{
+        height: 450px;
+    }
+    .saleProducts{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .saleProducts div{
+        height: 450px;
+    }
+    .saleProducts div img{
+        width: 320px;
+        height: 320px;
+    }
+    /* ---CONTACT--- */
+    .contactCover{
+        background-image: url(../img/backgroundContact2.jpg);
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+    .asideContact ul{
+        list-style: none;
+        width: 300px;
+        height: 900px;
+        background-color: #538590;
+    }
+    .asideContact form{
+        width: 600px;
+        height: 900px;
+    }
+    /* ----HELP----- */
+    .supportCover{
+        background-image: url(../img/coverSoporte.jpg);
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ------------ABOUT--------- */
+    .aboutCover{
+        background-image: url(../img/iphone14HeroMobile2.jpg);
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content:start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text1 div{
+        text-align: left;
+        height: 650px;
+        width: 900px;
+        margin-top: 100px;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 850px;
+        width: 900px;
+        /* margin-top: 100px; */
+    }
+}
+@media screen and (max-width:1200px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 56px auto 400px;
+        gap: 0px 0px;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    }
+    .hero div h1{
+        font-size: 55px;
+    }
+    .hero{
+        background-image: url(../img/heroSection/montereyMobile.jpg);
+        width: 100%;
+        /* height: 90vh; */
+        height: calc(100vh - 50px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .iphoneCover{
+        background-image: url(../img/heroIphone14Pro2.png);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .iphoneCover div h2{
+        color: white;
+        font-size: 60px;
+        /* font-weight: bolder; */
+        margin-bottom: 20px;
+    }
+    .iphoneCover div h3{
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 35px;
+    }
+    .iphoneText{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: #9613dd;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .iphoneCircle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-image: linear-gradient(90deg,#2c1f89,#5715cf 24%,#9613dd 45%,#a411dc 76%,#e068a6);
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .iphoneButton:hover .iphoneText{
+        color: #9613dd;
+    }
+    .ipadCover{
+        background-image: url(../img/backgroundPinkMobile.jpg);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .text{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: white;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .circle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .ipadButton:hover .text{
+        color: white;
+    }
+    .hero div h1{
+        font-size: 55px;
+    }
+    .products{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .products div{
+        height: 450px;
+    }
+    .products2{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .products2 div{
+        height: 450px;
+    }
+    .saleProducts{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .saleProducts div{
+        height: 450px;
+    }
+    .saleProducts div img{
+        width: 320px;
+        height: 320px;
+    }
+    /* --------ABOUT--------*/
+    .text1 div{
+        text-align: left;
+        height: 850px;
+        width: 600px;
+        margin-top: 100px;
+    }
+    .text2 div h2{
+        text-align: left;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 1000px;
+        width: 600px;
+        /* margin-top: 100px; */
+    }
+}
+@media screen and (max-width:1024px){
+    .hero div h1{
+        font-size: 55px;
+    }
+    .hero{
+        background-image: url(../img/heroSection/montereyMobile.jpg);
+        width: 100%;
+        /* height: 90vh; */
+        height: calc(100vh - 50px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .iphoneCover{
+        background-image: url(../img/heroIphone14Pro2.png);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .iphoneCover div h2{
+        color: white;
+        font-size: 60px;
+        /* font-weight: bolder; */
+        margin-bottom: 20px;
+    }
+    .iphoneCover div h3{
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 35px;
+    }
+    .iphoneText{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: #9613dd;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .iphoneCircle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-image: linear-gradient(90deg,#2c1f89,#5715cf 24%,#9613dd 45%,#a411dc 76%,#e068a6);
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .iphoneButton:hover .iphoneText{
+        color: #9613dd;
+    }
+    .ipadCover{
+        background-image: url(../img/backgroundPinkMobile.jpg);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .text{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: white;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .circle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .ipadButton:hover .text{
+        color: white;
+    }
+    /* -----CONTACT----- */
+    .contactCover{
+        background-image: url(../img/backgroundContact3.jpg);
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+    .asideContact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 60px;
+    }
+    .asideContact ul{
+        text-align: center;
+        list-style: none;
+        width: 600px;
+        height: 600px;
+        background-color: #538590;
+    }
+    .asideContact ul li h2{
+        font-size: 35px;
+        margin-top: 80px;
+        color: white;
+    }
+    .contactCover div{
+        text-align: center;
+    }
+    .contactCover div h1{
+        color: white;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .contactCover div p{
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: Raleway;
+        text-transform: uppercase;
+    }
+    /* -------HELP-------- */
+    .supportCover div{
+        text-align: center;
+        margin-right: 0px;
+    }
+    .supportIcons div img{
+        height: 75px;
+        width: 75px;
+        margin-bottom: 30px;
+    }
+    .supportIcons div{
+        text-align:center;
+        width: 250px;
+        height: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    /* ----------ABOUT------- */
+    .aboutCover{
+        background-image: url(../img/iphone14HeroMobile.jpg);
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content:start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text1 div{
+        text-align: left;
+        height: 850px;
+        width: 600px;
+        margin-top: 100px;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 1000px;
+        width: 600px;
+        /* margin-top: 100px; */
+    }
+}
+@media screen and (max-width:767px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 56px auto 600px;
+        gap: 0px 0px;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    .hero{
+        background-image: url(../img/heroSection/montereyMobile.jpg);
+        width: 100%;
+        /* height: 90vh; */
+        height: calc(100vh - 50px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .iphoneCover{
+        background-image: url(../img/heroIphone14Pro2.png);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .iphoneCover div h2{
+        color: white;
+        font-size: 60px;
+        /* font-weight: bolder; */
+        margin-bottom: 20px;
+    }
+    .iphoneCover div h3{
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 35px;
+    }
+    .ipadCover{
+        background-image: url(../img/backgroundPinkMobile.jpg);
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        background-attachment: scroll;
+    }
+    .iphoneText{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: #9613dd;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .iphoneCircle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-image: linear-gradient(90deg,#2c1f89,#5715cf 24%,#9613dd 45%,#a411dc 76%,#e068a6);
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .iphoneButton:hover .iphoneText{
+        color: #9613dd;
+    }
+    .text{
+        font-size: 1.2rem;
+        position: absolute;
+        inset: 0;
+        padding: 0rem 0;
+        margin-left: 0rem;
+        color: white;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+    .circle{
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 1.625rem;
+        transition: all 0.4s ease-in-out;
+        display: none;
+    }
+    .ipadButton:hover .text{
+        color: white;
+    }
+
+    .hero div h1{
+        font-size: 45px;
+    }
+    .productsTitle div h2{
+        font-size: 32px;
+    }
+    .iphoneCover div h2{
+        font-size: 40px;
+    }
+    .iphoneCover div h3{
+        font-size: 28px;
+    }
+    .products2Title div h2{
+        font-size: 32px;
+    }
+    .ipadCover div h2{
+        font-size: 40px;
+    }
+    .ipadCover div h3{
+        font-size: 28px;
+    }
+    .saleProductsTitle div h2{
+        font-size: 32px;
+    }
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    /* -----------CONTACT----------- */
+    .asideContact ul{
+        text-align: center;
+        list-style: none;
+        width: 400px;
+        height: 600px;
+        background-color: #538590;
+    }
+    .asideContact ul li h2{
+        font-size: 35px;
+        margin-top: 80px;
+        color: white;
+    }
+    .contactCover div{
+        text-align: center;
+    }
+    .contactCover div h1{
+        color: white;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .contactCover div p{
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: Raleway;
+        text-transform: uppercase;
+    }
+    .asideContact form{
+        width: 400px;
+        height: 900px;
+    }
+    /* -------HELP-------- */
+    .supportCover{
+        background-image: url(../img/coverSoporte2.jpg);
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+    .supportCover div{
+        text-align: center;
+        margin-right: 0px;
+    }
+    .supportIcons{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:nowrap;
+        flex-direction: column;
+    }
+    .supportIcons div img{
+        height: 75px;
+        width: 75px;
+        margin-bottom: 30px;
+    }
+    .supportIcons div{
+        text-align:center;
+        width: 200px;
+        height: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    /* -----ABOUT------- */
+    .text1 div{
+        text-align: left;
+        height: 1200px;
+        width: 400px;
+        margin-top: 100px;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 1400px;
+        width: 400px;
+        /* margin-top: 100px; */
+    }
+}
+@media screen and (max-width:574px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 56px auto 1000px;
+        gap: 0px 0px;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    .hero div h1{
+        color: white;
+        background-color: transparent;
+        /* border-radius: 10px; */
+        font-size: 38px;
+        margin-bottom: 30px;
+        font-family: Styrene A Web, sans-serif;
+    }
+    .footer-col {
+		width: 100%;
+        text-align: center;
+	}
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        background-color: #971DBC;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+        display: none;
+    }
+    .titleShop h1{
+        font-size: 40px;
+    }
+    .titleShop h2{
+        font-size: 50px;
+    }
+    /* -------CONTACT--------- */
+    .asideContact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 60px;
+    }
+    .asideContact ul{
+        text-align: center;
+        list-style: none;
+        width: 300px;
+        height: 700px;
+        background-color: #538590;
+    }
+    .asideContact ul li h2{
+        font-size: 35px;
+        margin-top: 80px;
+        color: white;
+    }
+    .contactCover div{
+        text-align: center;
+    }
+    .contactCover div h1{
+        color: white;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .contactCover div p{
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: Raleway;
+        text-transform: uppercase;
+    }
+    .asideContact form{
+        width: 300px;
+        height: 1000px;
+    }
+    /* ---------HELP------------ */
+    .supportData div{
+        text-align:left;
+        width: 350px;
+        height: 350px;
+        /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+    .supportData div img{
+        height: 200px;
+        width: 350px;
+        margin-top: 50px;
+    }
+    .supportData2 div{
+        text-align:left;
+        width: 350px;
+        height: 450px;
+        /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+    .supportData2 div img{
+        height: 200px;
+        width: 350px;
+        margin-top: 50px;
+    }
+    .supportData3 div{
+        text-align:left;
+        width: 350px;
+        height: 450px;
+        /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+    .supportData3 div img{
+        height: 200px;
+        width: 350px;
+        margin-top: 50px;
+    }
+    /* --------ABOUT-------- */
+    .aboutCover div{
+        width: 400px;
+        text-align:center;
+        margin-top: 100px;
+    }
+    .aboutCover div h1{
+        color: white;
+        font-size: 40px;
+    }
+    .text1 div{
+        text-align: left;
+        height: 900px;
+        width: 300px;
+        margin-top: 100px;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 1000px;
+        width: 300px;
+        /* margin-top: 100px; */
+    }
+    .text1 div p{
+        color: #9613dd;
+        background-color: white;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .text2 div h2{
+        color: white;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-align: left;
+    }
+    .text2 div p{
+        color: white;
+        font-size: 20px;
+        /* margin-left: 350px;
+        margin-right: 350px; */
+        margin-bottom: 50px;
+        text-align: left;
+    }
+}
+@media screen and (max-width:500px){
+    .hero div h1{
+        font-size: 24px;
+    }
+    .shopProducts div{
+        /* border:1px solid hsla(0,0%,63%,.25); */
+        height: 500px;
+        width: 300px;
+    }
+    .productsTitle div{
+        width: 300px;
+    }
+    .products2Title div{
+        width: 300px;
+    }
+    .products div img{
+        width: 200px;
+        height: 200px;
+    }
+    .products2 div img{
+        width: 150px;
+        height: 200px;
+    }
+    .saleProducts div{
+        width: 300px;
+    }
+    .productsTitle div img{
+        width: 200px;
+        height: 200px;
+    }
+    .products2 div{
+        width: 300px;
+    }
+    .saleProducts div img{
+        width: 200px;
+        height: 200px;
+    }
+    /* -----CONTACT------ */
+    .contactCover div{
+        width: 200px;
+        text-align: center;
+    }
+    .contactCover div h1{
+        color: white;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .contactCover div p{
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: Raleway;
+        text-transform: uppercase;
+    }
+    .asideContact ul{
+        text-align: center;
+        list-style: none;
+        width: 250px;
+        height: 700px;
+        background-color: #538590;
+    }
+    .asideContact ul li{
+        width: 160px;
+    }
+    .asideContact ul li h2{
+        font-size: 25px;
+        margin-top: 80px;
+        color: white;
+    }
+    .asideContact ul li P{
+        font-size: 12px;
+    }
+    .asideContact ul li a{
+        font-size: 12px;
+    }
+    .contactCover div{
+        text-align: center;
+    }
+    .contactCover div h1{
+        color: white;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .contactCover div p{
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: Raleway;
+        text-transform: uppercase;
+    }
+    .asideContact form{
+        width: 250px;
+        height: 1000px;
+    }
+    .asideContact form h3{
+        font-size: 25px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    /* -------HELP--------- */
+    .supportCover div h1{
+        color: white;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .supportCover div p{
+        color: white;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .supportData div h2{
+        color: black;
+        font-size: 30px;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+        .supportData2 div h2{
+        color: black;
+        font-size: 30px;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .supportData3 div h2{
+        color: black;
+        font-size: 30px;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .supportData div{
+        text-align:left;
+        width: 300px;
+        height: 300px;
+        /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+    .supportData div img{
+        height: 200px;
+        width: 300px;
+        margin-top: 150px;
+    }
+    .supportData2 div{
+        text-align:left;
+        width: 300px;
+        height: 350px;
+        /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+    .supportData2 div img{
+        height: 200px;
+        width: 300px;
+        margin-top: 150px;
+    }
+    .supportData3 div{
+        text-align:left;
+        width: 300px;
+        height: 400px;
+        /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+    .supportData3 div img{
+        height: 200px;
+        width: 300px;
+        margin-top: 150px;
+    }
+    /*-------------ABOUT------------*/
+    .aboutCover div{
+        width: 300px;
+        text-align:center;
+        margin-top: 100px;
+    }
+    .aboutCover div h1{
+        color: white;
+        font-size: 40px;
+    }
+    .text1 div{
+        text-align: left;
+        height: 750px;
+        width: 300px;
+        margin-top: 100px;
+    }
+    .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 1000px;
+        width: 300px;
+    }
+    .text1 div p{
+        color: #9613dd;
+        background-color: white;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .text2 div h2{
+        color: white;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-align: left;
+    }
+    .text2 div p{
+        color: white;
+        font-size: 20px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+    .aboutImages div{
+        height: 300px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .aboutImages div img{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media screen and (max-width:380px){
+    .products div{
+        width: 250px;
+    }
+    .products2 div{
+        width: 250px;
+    }
+    .saleProducts div{
+        width: 250px;
+    }
+    /* ----CONTACT------ */
+    .asideContact ul{
+        text-align: center;
+        list-style: none;
+        width: 230px;
+        height: 700px;
+        background-color: #538590;
+    }
+    .asideContact form{
+        width: 230px;
+        height: 1000px;
+    }
+    .asideContact ul li{
+        width: 140px;
+    }
+
+}

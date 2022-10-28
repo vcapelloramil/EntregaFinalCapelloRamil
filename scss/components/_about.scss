@@ -1,0 +1,62 @@
+@import "../base/variables";
+/*!---------ABOUT----------*/
+.aboutCover {
+	background-image: url(../img/iphone14Hero.jpg);
+	@include whSize (100%, 70vh);
+	@include background(cover, center, no-repeat, none);
+	@include flex (flex, start, center);
+	flex-direction: column;
+	div {
+		width: 500px;
+		text-align: center;
+		margin-top: 100px;
+		h1 {
+			color: nth($colores, 1);
+			font-size: 50px;
+		}
+	}
+}
+.text1 {
+	@include flex (flex, center, center);
+	div {
+		text-align: left;
+		@include whSize (1150px, 500px);
+		margin-top: 100px;
+		p {
+			color: nth($colores, 15);
+			background-color: nth($colores, 1);
+			font-size: 40px;
+			margin-bottom: 30px;
+		}
+	}
+}
+.text2 {
+	@include flex (flex, center, center);
+	background-color: nth($colores, 15);
+	div {
+		text-align: left;
+		@include whSize (1150px, 700px);
+		h2 {
+			@include text (40px, start, 80px, 20px, none);
+			color: nth($colores, 1);
+		}
+		p {
+			@include text (30px, left, 0px, 50px, italic);
+			color: nth($colores, 1);
+		}
+	}
+}
+.aboutImages {
+	@include flex (flex, center, center);
+	flex-wrap: wrap;
+	flex-direction: row;
+	div {
+		height: 400px;
+		margin-inline: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		img {
+			@include whSize (400px, 400px);
+		}
+	}
+}

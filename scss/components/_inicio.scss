@@ -1,509 +1,406 @@
-//------INICIO------//
-main{
-    grid-area: main;
-    .hero{
-        background-image: url(../img/heroSection/monterey.jpg);
-        width: 100%;
-        /* height: 90vh; */
-        height: calc(100vh - 50px);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        div{
-            h1{
-                color: white;
-                /* background-color: rgba(255, 255, 255, 0.5); */
-                border-radius: 10px;
-                font-size:65px;
-                font-weight: bold;
-                margin-bottom: 30px;
-                font-family: Styrene A Web, sans-serif;
-            }
-            .heroWrapper{
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                margin-top: 20px;
-                .heroButton{
-                    height: 60px;
-                    width: 60px;
-                    float: left;
-                    margin: 0 5px;
-                    overflow: hidden;
-                    background: #fff;
-                    border-radius: 50px;
-                    cursor: pointer;
-                    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-                    transition: all 0.5s ease-out;
-                    text-decoration: none;
-                    &:hover{
-                        background-color: grey;
-                    }
-                    .heroIcon{
-                        display: inline-block;
-                        height: 60px;
-                        width: 60px;
-                        text-align: center;
-                        border-radius: 50px;
-                        box-sizing: border-box;
-                        line-height: 60px;
-                        transition: all 0.5s ease-out;
-                        i{
-                            font-size: 25px;
-                            line-height: 60px;
-                            transition: all 0.5s ease-out;
-                            color: black;
-                        }
-                        &:hover{
-                            color: #fff;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .productsTitle{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        div{
-            width: 450px;
-            h2{
-                color: black;
-                font-size: 45px;
-                text-align: center;
-                margin-bottom: 20px;
-                margin-top: 100px;
-            }
-            p{
-                font-style: italic;
-                font-size: 20px;
-                margin-top: 20px;
-                margin-bottom: 30px;
-            }
-        }
-    }
-    .products{
-        display: flex;
-        justify-content:center;
-        align-items:center;
-        flex-wrap:wrap;
-        flex-direction: row-reverse;
-        div{
-            text-align:center;
-            width: 450px;
-            border-radius: 40px;
-            border: #ffffff 10px solid;
-            margin-top: 20px;
-            margin-bottom: 100px;
-            img{
-                height: 300px;
-                width: 300px;
-                margin-bottom: 20px;
-            }
-            a{
-                position: relative;
-                text-decoration: none;
-                /* font-family: 'SamsungOne',arial,sans-serif; */
-                color: black;
-                font-size: 20px;
-                letter-spacing: 0.5px;
-                &::after{
-                    content: "";
-                    position: absolute;
-                    background-color: black;
-                    height: 2px;
-                    width: 100%;
-                    left:0;
-                    bottom: -5px;
-                    transform: scaleX(0);
-                    transform-origin: right;
-                    transition: transform 250ms ease-in;
-                }
-                &:hover{
-                    font-weight: bold;
-                }
-                &:hover:after{
-                    transform: scaleX(1);
-                    transform-origin: left;
-                }
-            }
-            h3{
-                font-size: x-large;
-                color: black;
-            }
-            p{
-                font-style: italic;
-                font-size: 20px;
-                margin-top: 20px;
-                margin-bottom: 30px;
-            }
-        }
-    }
-    .iphoneCover{
-        background-image: url(../img/heroIphone14Pro.png);
-        display: flex;
-        width: 100%;
-        height: 80vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        justify-content: center;
-        align-items: center;
-        background-attachment: fixed;
-        div{
-            text-align: center;
-            h2{
-                color: black;
-                font-size: 60px;
-                margin-bottom: 20px;
-            }
-            h3{
-                color: black;
-                font-size: 30px;
-                margin-bottom: 35px;
-            }
-            div{
-                .iphoneButton{
-                    position: relative;
-                    border: 0;
-                    display: inline-block;
-                    width: 12rem;
-                    height: auto;
-                    cursor: pointer;
-                    outline: none;
-                    vertical-align: middle;
-                    background: transparent;
-                    &:hover{
-                        .iphoneCircle{
-                            position: relative;
-                            display: block;
-                            margin: 0;
-                            width: 3rem;
-                            height: 3rem;
-                            background-image: linear-gradient(90deg,#2c1f89,#5715cf 24%,#9613dd 45%,#a411dc 76%,#e068a6);
-                            border-radius: 1.625rem;
-                            transition: all 0.4s ease-in-out;
-                            width: 100%;
-                            .iphoneIcon{
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                margin: auto;
-                                background: black;
-                            }
-                            .iphoneArrow{
-                                left: 0.625rem;
-                                width: 1.125rem;
-                                height: 0.125rem;
-                                background: none;
-                                transition: all 0.4s ease-in-out;
-                                background: white;
-                                transform: translateX(1rem);
-                                &::before{
-                                    content: "";
-                                    position: absolute;
-                                    top: -0.25rem;
-                                    right: 0.0625rem;
-                                    width: 0.625rem;
-                                    height: 0.625rem;
-                                    border-top: 0.125rem solid white;
-                                    border-right: 0.125rem solid white;
-                                    transform: rotate(45deg);
-                                }
-                            }
-                        }
-                        .iphoneText{
-                            color: white;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .ipadCover{
-        background-image: url(../img/heroSection/coverIpad3.png);
-        display: flex;
-        width: 100%;
-        height: 80vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        justify-content: center;
-        align-items: center;
-        background-attachment: fixed;
-        div{
-            text-align: center;
-            h2{
-                color: white;
-                font-size: 60px;
-                margin-bottom: 20px;
-            }
-            h3{
-                color:white;
-                font-size: 30px;
-                margin-bottom: 40px;
-            }
-            div{
-                .ipadButton{
-                    position: relative;
-                    border: 0;
-                    display: inline-block;
-                    width: 12rem;
-                    height: auto;
-                    cursor: pointer;
-                    outline: none;
-                    vertical-align: middle;
-                    background: transparent;
-                    &:hover{
-                        .circle{
-                            position: relative;
-                            display: block;
-                            margin: 0;
-                            width: 3rem;
-                            height: 3rem;
-                            background-color: white;
-                            border-radius: 1.625rem;
-                            transition: all 0.4s ease-in-out;
-                            width: 100%;
-                            .ipadIcon{
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                margin: auto;
-                                background: black;
-                            }
-                            .ipadArrow{
-                                left: 0.625rem;
-                                width: 1.125rem;
-                                height: 0.125rem;
-                                background: none;
-                                transition: all 0.4s ease-in-out;
-                                background: black;
-                                transform: translateX(1rem);
-                                &::before{
-                                    content: "";
-                                    position: absolute;
-                                    top: -0.25rem;
-                                    right: 0.0625rem;
-                                    width: 0.625rem;
-                                    height: 0.625rem;
-                                    border-top: 0.125rem solid black;
-                                    border-right: 0.125rem solid black;
-                                    transform: rotate(45deg);
-                                }
-                            }
-                        }
-                        .text{
-                            color: black;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .products2Title{
-        display: flex;
-        justify-content:center;
-        align-items:center;
-        text-align: center;
-        div{
-            h2{
-                color: black;
-                font-size: 45px;
-                text-align: center;
-                margin-bottom: 20px;
-                margin-top: 100px;
-            }
-            a{
-                position: relative;
-                text-decoration: none;
-                /* font-family: 'SamsungOne',arial,sans-serif; */
-                color: black;
-                font-size: 20px;
-                letter-spacing: 0.5px;
-                &:after{
-                    content: "";
-                    position: absolute;
-                    background-color: black;
-                    height: 2px;
-                    width: 100%;
-                    left:0;
-                    bottom: -5px;
-                    transform: scaleX(0);
-                    transform-origin: right;
-                    transition: transform 250ms ease-in;
-                }
-                &:hover{
-                    font-weight: bold;
-                }
-                &:hover:after{
-                    transform: scaleX(1);
-                    transform-origin: left;
-                }
-            }
-        }
-    }
-    .products2{
-        display: flex;
-        justify-content:center;
-        align-items:center;
-        flex-wrap: wrap;
-        div{
-            text-align:center;
-            width: 500px;
-            /* height: 700px; */
-            /* background-color: grey; */
-            border-radius: 40px;
-            border: #ffffff 25px solid;
-            margin-top: 30px;
-            margin-bottom: 100px;
-            img{
-                height: 300px;
-                width: 250px;
-            }
-            h2{
-                color: black;
-                font-size: 45px;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            a{
-                position: relative;
-                text-decoration: none;
-                /* font-family: 'SamsungOne',arial,sans-serif; */
-                color: black;
-                font-size: 20px;
-                letter-spacing: 0.5px;
-                &:after{
-                    content: "";
-                    position: absolute;
-                    background-color: black;
-                    height: 2px;
-                    width: 100%;
-                    left:0;
-                    bottom: -5px;
-                    transform: scaleX(0);
-                    transform-origin: right;
-                    transition: transform 250ms ease-in;
-                }
-                &:hover{
-                    font-weight: bold;
-                }
-                &:hover:after{
-                    transform: scaleX(1);
-                    transform-origin: left;
-                }
-            }
-            h3{
-                font-size: x-large;
-                color: black;
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-            p{
-                font-style: italic;
-                font-size: 20px;
-                margin-top: 20px;
-                margin-bottom: 30px;
-            }
-        }
-    }
-    .saleProductsTitle{
-        display: flex;
-        justify-content:center;
-        align-items:center;
-        text-align: center;
-        div{
-            h2{
-                color: black;
-                font-size: 45px;
-                text-align: center;
-                margin-bottom: 20px;
-                margin-top: 100px;
-            }
-            a{
-                position: relative;
-                text-decoration: none;
-                /* font-family: 'SamsungOne',arial,sans-serif; */
-                color: black;
-                font-size: 20px;
-                letter-spacing: 0.5px;
-                &:after{
-                    content: "";
-                    position: absolute;
-                    background-color: black;
-                    height: 2px;
-                    width: 100%;
-                    left:0;
-                    bottom: -5px;
-                    transform: scaleX(0);
-                    transform-origin: right;
-                    transition: transform 250ms ease-in;
-                }
-                &:hover{
-                    font-weight: bold;
-                }
-                &:hover:after{
-                    transform: scaleX(1);
-                    transform-origin: left;
-                }
-            }
-        }
-    }
-    .saleProducts{
-        display: flex;
-        justify-content:center;
-        align-items:center;
-        flex-wrap:wrap;
-        flex-direction: row-reverse;
-        div{
-            img{
-                height: 400px;
-                width: 400px;
-            }
-            a{
-                position: relative;
-                text-decoration: none;
-                /* font-family: 'SamsungOne',arial,sans-serif; */
-                color: black;
-                font-size: 20px;
-                letter-spacing: 0.5px;
-                &:after{
-                    content: "";
-                    position: absolute;
-                    background-color: black;
-                    height: 2px;
-                    width: 100%;
-                    left:0;
-                    bottom: -5px;
-                    transform: scaleX(0);
-                    transform-origin: right;
-                    transition: transform 250ms ease-in;
-                }
-                &:hover{
-                    font-weight: bold;
-                }
-                &:hover:after{
-                    transform: scaleX(1);
-                    transform-origin: left;
-                }
-            }
-            h3{
-                font-size: x-large;
-                color: black;
-            }
-            p{
-                font-style: italic;
-                font-size: 20px;
-                margin-top: 20px;
-                margin-bottom: 30px;
-            }
-        }
-    }
+@import "../base/variables";
+/*! INICIO */
+main {
+	grid-area: main;
+}
+/*!--HERO SECTION --*/
+.hero {
+	background-image: url(../img/heroSection/monterey.jpg);
+	@include whSize (100%, calc(100vh - 50px));
+	@include background(cover, center, no-repeat, fixed);
+	@include flex (flex, center, center);
+	div {
+		h1 {
+			color: nth($colores, 1);
+			border-radius: 10px;
+			font-size: 65px;
+			font-weight: bold;
+			margin-bottom: 30px;
+			font-family: Styrene A Web, sans-serif;
+		}
+	}
+}
+.heroWrapper {
+	@include flex (flex, center, flex-start);
+	margin-top: 20px;
+	.heroButton {
+		@include whSize (60px, 60px);
+		float: left;
+		margin: 0 5px;
+		overflow: hidden;
+		background: nth($colores, 1);
+		border-radius: 50px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px nth($colores, 10);
+		transition: all 0.5s ease-out;
+		text-decoration: none;
+		.heroIcon {
+			display: inline-block;
+			@include whSize (60px, 60px);
+			text-align: center;
+			border-radius: 50px;
+			box-sizing: border-box;
+			line-height: 60px;
+			transition: all 0.5s ease-out;
+			i {
+				font-size: 25px;
+				line-height: 60px;
+				transition: all 0.5s ease-out;
+				color: nth($colores, 2);
+			}
+			&:hover {
+				i {
+					color: nth($colores, 1);
+				}
+			}
+		}
+		&:hover {
+			background-color: nth($colores, 3);
+		}
+	}
+}
+/*! BEST SELLERS/NEWEST DEVICES/ON SALE*/
+.productsTitle {
+	@include flex (flex, center, center);
+	text-align: center;
+	div {
+		width: 450px;
+		h2 {
+			@include text (45px, center, 100px, 20px, none);
+			color: nth($colores, 2);
+		}
+		p {
+			@include text (20px, center, 30px, 20px, italic);
+		}
+	}
+}
+.products {
+	@include flex (flex, center, center);
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	div {
+		img {
+			@include whSize (300px, 300px);
+			margin-bottom: 20px;
+		}
+		@include text (0px, center, 20px, 100px, none);
+		width: 450px;
+		border-radius: 40px;
+		border: nth($colores, 1) 10px solid;
+		a {
+			color: nth($colores, 2);
+			@extend %link;
+			&:after {
+				background-color: nth($colores, 2);
+				@include whSize (100%, 2px);
+				@extend %linkAfter;
+			}
+			&:hover {
+				font-weight: bold;
+				&:after {
+					transform: scaleX(1);
+					transform-origin: left;
+				}
+			}
+		}
+		h3 {
+			font-size: x-large;
+			color: nth($colores, 2);
+		}
+		p {
+			@include text (20px, center, 20px, 30px, italic);
+		}
+	}
+}
+/*! IPHONE COVER */
+.iphoneCover {
+	background-image: url(../img/heroIphone14Pro.png);
+	@include whSize (100%, 80vh);
+	@include background(cover, center, no-repeat, fixed);
+	@include flex (flex, center, center);
+	div {
+		text-align: center;
+		h2 {
+			@include text (60px, center, 0px, 20px, none);
+			color: nth($colores, 2);
+		}
+		h3 {
+			@include text (30px, center, 0px, 35px, none);
+			color: nth($colores, 2);
+		}
+	}
+}
+.iphoneButton {
+	position: relative;
+	border: 0;
+	display: inline-block;
+	@include whSize (12rem, auto);
+	cursor: pointer;
+	outline: none;
+	vertical-align: middle;
+	background: transparent;
+	&:hover {
+		.iphoneCircle {
+			width: 100%;
+		}
+		.iphoneArrow {
+			background: nth($colores, 1);
+			transform: translateX(1rem);
+		}
+		.iphoneText {
+			color: nth($colores, 1);
+		}
+	}
+}
+.iphoneText {
+	font-size: 1.2rem;
+	position: absolute;
+	inset: 0;
+	padding: 0.9rem 0;
+	margin-left: 1.85rem;
+	color: nth($colores, 14);
+	line-height: 1;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+}
+.iphoneCircle {
+	position: relative;
+	display: block;
+	margin: 0;
+	@include whSize (3rem, 3rem);
+	background-image: linear-gradient(90deg,nth($colores, 13),nth($colores, 14) 24%,nth($colores, 15) 45%,nth($colores, 16) 76%,nth($colores, 17));
+	border-radius: 1.625rem;
+	transition: all 0.4s ease-in-out;
+}
+.iphoneIcon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: nth($colores, 2);
+}
+.iphoneArrow {
+	left: 0.625rem;
+	@include whSize (1.125rem, 0.125rem);
+	background: none;
+	transition: all 0.4s ease-in-out;
+	&::before {
+		content: "";
+		position: absolute;
+		top: -0.25rem;
+		right: 0.0625rem;
+		@include whSize (0.625rem, 0.625rem);
+		border-top: 0.125rem solid white;
+		border-right: 0.125rem solid white;
+		transform: rotate(45deg);
+	}
+}
+/*! IPAD COVER */
+.ipadCover {
+	background-image: url(../img/heroSection/coverIpad3.png);
+	@include whSize (100%, 80vh);
+	@include background(cover, center, no-repeat, fixed);
+	@include flex (flex, center, center);
+	div {
+		text-align: center;
+		h2 {
+			@include text (60px, center, 0px, 20px, none);
+			color: nth($colores, 1);
+		}
+		h3 {
+			@include text (30px, center, 0px, 40px, none);
+			color: nth($colores, 1);
+		}
+	}
+}
+.ipadButton {
+	position: relative;
+	border: 0;
+	display: inline-block;
+	@include whSize (12rem, auto);
+	cursor: pointer;
+	outline: none;
+	vertical-align: middle;
+	background: transparent;
+	&:hover {
+		.circle {
+			width: 100%;
+		}
+		.ipadArrow {
+			background: nth($colores, 2);
+			transform: translateX(1rem);
+		}
+		.text {
+			color: nth($colores, 2);
+		}
+	}
+}
+.text {
+	font-size: 1.2rem;
+	position: absolute;
+	inset: 0;
+	padding: 0.9rem 0;
+	margin-left: 1.85rem;
+	color: nth($colores, 1);
+	line-height: 1;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+}
+.circle {
+	position: relative;
+	display: block;
+	margin: 0;
+	@include whSize (3rem, 3rem);
+	background-color: nth($colores, 1);
+	border-radius: 1.625rem;
+	transition: all 0.4s ease-in-out;
+}
+.ipadIcon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: nth($colores, 2);
+}
+.ipadArrow {
+	left: 0.625rem;
+	@include whSize (1.125rem, 0.125rem);
+	background: none;
+	transition: all 0.4s ease-in-out;
+	&::before {
+		content: "";
+		position: absolute;
+		top: -0.25rem;
+		right: 0.0625rem;
+		@include whSize (0.625rem, 0.625rem);
+		border-top: 0.125rem solid nth($colores, 2);
+		border-right: 0.125rem solid nth($colores, 2);
+		transform: rotate(45deg);
+	}
+}
+/*! SHOP OUR NEWEST DEVICES */
+.products2Title {
+	@include flex (flex, center, center);
+	text-align: center;
+	div {
+		h2 {
+			@include text (45px, center, 100px, 20px, none);
+		}
+		a {
+			color: nth($colores, 2);
+			@extend %link;
+			&:after {
+				background-color: nth($colores, 2);
+				@include whSize (100%, 2px);
+				@extend %linkAfter;
+			}
+			&:hover {
+				font-weight: bold;
+				&:after {
+					transform: scaleX(1);
+					transform-origin: left;
+				}
+			}
+		}
+	}
+}
+.products2 {
+	@include flex (flex, center, center);
+	flex-wrap: wrap;
+	div {
+		img {
+			@include whSize (250px, 300px);
+		}
+		@include text (0px, center, 30px, 100px, none);
+		width: 500px;
+		border-radius: 40px;
+		border: nth($colores, 1) 25px solid;
+		a {
+			color: nth($colores, 2);
+			@extend %link;
+			&:after {
+				background-color: nth($colores, 2);
+				@include whSize (100%, 2px);
+				@extend %linkAfter;
+			}
+			&:hover {
+				font-weight: bold;
+				&:after {
+					transform: scaleX(1);
+					transform-origin: left;
+				}
+			}
+		}
+		h3 {
+			@include text (x-large, center, 20px, 20px, none);
+			color: nth($colores, 2);
+		}
+		p {
+			@include text (20px, center, 20px, 30px, italic);
+		}
+	}
+}
+/*! ON SALE */
+.saleProductsTitle {
+	@include flex (flex, center, center);
+	text-align: center;
+	div {
+		h2 {
+			@include text (45px, center, 100px, 20px, none);
+			color: nth($colores, 2);
+		}
+		a {
+			color: nth($colores, 2);
+			@extend %link;
+			&:after {
+				background-color: nth($colores, 2);
+				@include whSize (100%, 2px);
+				@extend %linkAfter;
+			}
+			&:hover {
+				font-weight: bold;
+				&:after {
+					transform: scaleX(1);
+					transform-origin: left;
+				}
+			}
+		}
+	}
+}
+.saleProducts {
+	@include flex (flex, center, center);
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	div {
+		img {
+			@include whSize (400px, 400px);
+		}
+		@include text (0px, center, 30px, 100px, none);
+		width: 500px;
+		border-radius: 40px;
+		border: nth($colores, 1) 10px solid;
+		a {
+			color: nth($colores, 2);
+			@extend %link;
+			&:after {
+				background-color: nth($colores, 2);
+				@include whSize (100%, 2px);
+				@extend %linkAfter;
+			}
+			&:hover {
+				font-weight: bold;
+				&:after {
+					transform: scaleX(1);
+					transform-origin: left;
+				}
+			}
+		}
+		h3 {
+			font-size: x-large;
+			color: nth($colores, 2);
+		}
+		p {
+			@include text (20px, center, 20px, 30px, italic);
+		}
+	}
 }

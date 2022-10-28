@@ -1,39 +1,36 @@
-//-------HEADER-----------//
-header{
-    background-color: rgba(255, 255, 255, 0.72);
-    position: sticky;
-    top: 0;
-    grid-area: header;
-    z-index: 1;
-    .navbar{
-        .navbar-nav{
-            margin: 0 auto;
-        }
-        ul{
-            display: flex;
-            align-items: center;
-        }
-        a{
-            img{
-                height: 24px;
-            }
-        }
-        div{
-            div{
-                .d-flex{
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    font-size: 50px;
-                    .fa-user-circle{
-                        font-size: 25px;
-                        color: grey;
-                        &:hover{
-                            color: black;
-                        }
-                    }
-                }
-            }
-        }
-    }
+@import "../base/variables";
+/**-------HEADER-----------*/
+.navbar {
+	.navbar-nav {
+		margin: 0 auto;
+	}
+	background-color: nth($colores, 1);
+}
+.d-flex {
+	@include flex (flex, center, center);
+	font-size: 50px;
+}
+.fa-user-circle {
+	font-size: 25px;
+	color: nth($colores, 3);
+	&:hover {
+		color: nth($colores, 2);
+	}
+}
+header {
+	background-color: nth($colores, 7);
+	position: sticky;
+	top: 0;
+	grid-area: header;
+	z-index: 1;
+	nav {
+		ul {
+			@include flex (flex, center, center);
+		}
+		a {
+			img {
+				height: 24px;
+			}
+		}
+	}
 }

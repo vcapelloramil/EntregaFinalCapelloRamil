@@ -1,0 +1,59 @@
+$colores:
+white,
+black,
+grey,
+#ccc,
+#bbbbbb,
+#f5f5f7,
+rgba(255, 255, 255, 0.72),
+#646568,
+#3b4c5c,
+rgba(255, 255, 255, 0.2),
+rgba(0,0,0,0.1),
+#24262b,
+#2c1f89,
+#5715cf,
+#9613dd,
+#a411dc,
+#e068a6,
+#538590,
+#971DBC,
+#e91e63;
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin background ($size, $position, $repeat, $attachment){
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+    background-attachment: $attachment;
+}
+@mixin text ($f-size, $t-align, $m-top, $m-bottom, $style) {
+    font-size: $f-size;
+    text-align: $t-align;
+    margin-top: $m-top;
+    margin-bottom: $m-bottom;
+    font-style: $style;
+}
+@mixin whSize ($width, $height){
+    width: $width;
+    height: $height;
+}
+%link{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+%linkAfter{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}

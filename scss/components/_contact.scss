@@ -1,0 +1,119 @@
+@import "../base/variables";
+/*! --------CONTACT-------- */
+.contactCover {
+	background-image: url(../img/backgroundContact.jpg);
+	@include whSize (100%, 45vh);
+	@include background(cover, center, no-repeat, none);
+	@include flex (flex, center, center);
+	div {
+		text-align: center;
+		h1 {
+			color: nth($colores, 1);
+			font-size: 70px;
+			margin-bottom: 20px;
+		}
+		p {
+			color: nth($colores, 1);
+			font-size: 28px;
+			font-weight: 400;
+			font-family: Raleway;
+			text-transform: uppercase;
+		}
+	}
+}
+.asideContact {
+	@include flex (flex, center, center);
+	flex-direction: row-reverse;
+	margin: 60px;
+	margin-bottom: 150px;
+	ul {
+		list-style: none;
+		@include whSize (400px, 900px);
+		background-color: nth($colores, 18);
+		li {
+			margin: 40px;
+			h2 {
+				font-size: 35px;
+				margin-top: 180px;
+				color: nth($colores, 1);
+			}
+			h3 {
+				color: nth($colores, 1);
+			}
+			p {
+				color: nth($colores, 1);
+			}
+			a {
+				color: nth($colores, 1);
+				text-decoration: none;
+			}
+		}
+	}
+	form {
+		@include whSize (700px, 900px);
+		div {
+			margin-right: 20px;
+			margin-left: 20px;
+			margin-bottom: 20px;
+			label[for=name] {
+				font-size: 20px;
+				padding-inline: 5px;
+				font-weight: bold;
+			}
+			input[type=text] {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				border: 1px solid nth($colores, 4);
+				border-radius: 4px;
+				box-sizing: border-box;
+			}
+			label[for=email] {
+				font-size: 20px;
+				font-weight: bold;
+			}
+			input[type=email] {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				border: 1px solid nth($colores, 4);
+				border-radius: 4px;
+				box-sizing: border-box;
+			}
+			select {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				border: 1px solid nth($colores, 4);
+				color: rgb(122, 122, 122);
+				border-radius: 4px;
+				box-sizing: border-box;
+			}
+			label[for=text] {
+				font-size: 20px;
+				font-weight: bold;
+			}
+			textarea {
+				width: 100%;
+				border: 1px solid nth($colores, 4);
+				border-radius: 4px;
+			}
+			input[type=submit] {
+				background-color: nth($colores, 6);
+				border: nth($colores, 2) 1px solid;
+				color: nth($colores, 2);
+				padding: 14px 15px;
+				text-decoration: none;
+				border-radius: 5px;
+				&:hover {
+					color: nth($colores, 1);
+					background-color: nth($colores, 9);
+					transition: 0.5s;
+				}
+			}
+		}
+		h3 {
+			@include text (35px, center, 20px, 10px, none);
+		}
+	}
+}

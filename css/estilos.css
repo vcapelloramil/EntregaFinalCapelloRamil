@@ -17,155 +17,1136 @@ html {
   gap: 0px 0px;
   grid-template-areas: "header header" "main main" "footer footer"; }
 
+.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.5px; }
+
+.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in; }
+
+.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.5px; }
+
+.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in; }
+
+/**-------HEADER-----------*/
+.navbar {
+  background-color: white; }
+  .navbar .navbar-nav {
+    margin: 0 auto; }
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px; }
+
+.fa-user-circle {
+  font-size: 25px;
+  color: grey; }
+  .fa-user-circle:hover {
+    color: black; }
+
 header {
   background-color: rgba(255, 255, 255, 0.72);
   position: sticky;
   top: 0;
   grid-area: header;
   z-index: 1; }
-  header .navbar .navbar-nav {
-    margin: 0 auto; }
-  header .navbar ul {
+  header nav ul {
     display: flex;
-    align-items: center; }
-  header .navbar a img {
-    height: 24px; }
-  header .navbar div div .d-flex {
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 50px; }
-    header .navbar div div .d-flex .fa-user-circle {
-      font-size: 25px;
-      color: grey; }
-      header .navbar div div .d-flex .fa-user-circle:hover {
-        color: black; }
+    align-items: center; }
+  header nav a img {
+    height: 24px; }
 
+.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.5px; }
+
+.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in; }
+
+/*! INICIO */
 main {
   grid-area: main; }
-  main .hero {
-    background-image: url(../img/heroSection/monterey.jpg);
+
+/*!--HERO SECTION --*/
+.hero {
+  background-image: url(../img/heroSection/monterey.jpg);
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero div h1 {
+    color: white;
+    border-radius: 10px;
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: Styrene A Web, sans-serif; }
+
+.heroWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px; }
+  .heroWrapper .heroButton {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease-out;
+    text-decoration: none; }
+    .heroWrapper .heroButton .heroIcon {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      border-radius: 50px;
+      box-sizing: border-box;
+      line-height: 60px;
+      transition: all 0.5s ease-out; }
+      .heroWrapper .heroButton .heroIcon i {
+        font-size: 25px;
+        line-height: 60px;
+        transition: all 0.5s ease-out;
+        color: black; }
+      .heroWrapper .heroButton .heroIcon:hover i {
+        color: white; }
+    .heroWrapper .heroButton:hover {
+      background-color: grey; }
+
+/*! BEST SELLERS/NEWEST DEVICES/ON SALE*/
+.productsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .productsTitle div {
+    width: 450px; }
+    .productsTitle div h2 {
+      font-size: 45px;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 20px;
+      font-style: none;
+      color: black; }
+    .productsTitle div p {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-style: italic; }
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; }
+  .products div {
+    font-size: 0px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-style: none;
+    width: 450px;
+    border-radius: 40px;
+    border: white 10px solid; }
+    .products div img {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px; }
+    .products div a {
+      color: black; }
+      .products div a:after {
+        background-color: black;
+        width: 100%;
+        height: 2px; }
+      .products div a:hover {
+        font-weight: bold; }
+        .products div a:hover:after {
+          transform: scaleX(1);
+          transform-origin: left; }
+    .products div h3 {
+      font-size: x-large;
+      color: black; }
+    .products div p {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-style: italic; }
+
+/*! IPHONE COVER */
+.iphoneCover {
+  background-image: url(../img/heroIphone14Pro.png);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .iphoneCover div {
+    text-align: center; }
+    .iphoneCover div h2 {
+      font-size: 60px;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-style: none;
+      color: black; }
+    .iphoneCover div h3 {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 35px;
+      font-style: none;
+      color: black; }
+
+.iphoneButton {
+  position: relative;
+  border: 0;
+  display: inline-block;
+  width: 12rem;
+  height: auto;
+  cursor: pointer;
+  outline: none;
+  vertical-align: middle;
+  background: transparent; }
+  .iphoneButton:hover .iphoneCircle {
+    width: 100%; }
+  .iphoneButton:hover .iphoneArrow {
+    background: white;
+    transform: translateX(1rem); }
+  .iphoneButton:hover .iphoneText {
+    color: white; }
+
+.iphoneText {
+  font-size: 1.2rem;
+  position: absolute;
+  inset: 0;
+  padding: 0.9rem 0;
+  margin-left: 1.85rem;
+  color: #5715cf;
+  line-height: 1;
+  text-align: center;
+  transition: all 0.4s ease-in-out; }
+
+.iphoneCircle {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background-image: linear-gradient(90deg, #2c1f89, #5715cf 24%, #9613dd 45%, #a411dc 76%, #e068a6);
+  border-radius: 1.625rem;
+  transition: all 0.4s ease-in-out; }
+
+.iphoneIcon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: black; }
+
+.iphoneArrow {
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+  transition: all 0.4s ease-in-out; }
+  .iphoneArrow::before {
+    content: "";
+    position: absolute;
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid white;
+    border-right: 0.125rem solid white;
+    transform: rotate(45deg); }
+
+/*! IPAD COVER */
+.ipadCover {
+  background-image: url(../img/heroSection/coverIpad3.png);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ipadCover div {
+    text-align: center; }
+    .ipadCover div h2 {
+      font-size: 60px;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-style: none;
+      color: white; }
+    .ipadCover div h3 {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 40px;
+      font-style: none;
+      color: white; }
+
+.ipadButton {
+  position: relative;
+  border: 0;
+  display: inline-block;
+  width: 12rem;
+  height: auto;
+  cursor: pointer;
+  outline: none;
+  vertical-align: middle;
+  background: transparent; }
+  .ipadButton:hover .circle {
+    width: 100%; }
+  .ipadButton:hover .ipadArrow {
+    background: black;
+    transform: translateX(1rem); }
+  .ipadButton:hover .text {
+    color: black; }
+
+.text {
+  font-size: 1.2rem;
+  position: absolute;
+  inset: 0;
+  padding: 0.9rem 0;
+  margin-left: 1.85rem;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  transition: all 0.4s ease-in-out; }
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 1.625rem;
+  transition: all 0.4s ease-in-out; }
+
+.ipadIcon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: black; }
+
+.ipadArrow {
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+  transition: all 0.4s ease-in-out; }
+  .ipadArrow::before {
+    content: "";
+    position: absolute;
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid black;
+    border-right: 0.125rem solid black;
+    transform: rotate(45deg); }
+
+/*! SHOP OUR NEWEST DEVICES */
+.products2Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .products2Title div h2 {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-style: none; }
+  .products2Title div a {
+    color: black; }
+    .products2Title div a:after {
+      background-color: black;
+      width: 100%;
+      height: 2px; }
+    .products2Title div a:hover {
+      font-weight: bold; }
+      .products2Title div a:hover:after {
+        transform: scaleX(1);
+        transform-origin: left; }
+
+.products2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .products2 div {
+    font-size: 0px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-style: none;
+    width: 500px;
+    border-radius: 40px;
+    border: white 25px solid; }
+    .products2 div img {
+      width: 250px;
+      height: 300px; }
+    .products2 div a {
+      color: black; }
+      .products2 div a:after {
+        background-color: black;
+        width: 100%;
+        height: 2px; }
+      .products2 div a:hover {
+        font-weight: bold; }
+        .products2 div a:hover:after {
+          transform: scaleX(1);
+          transform-origin: left; }
+    .products2 div h3 {
+      font-size: x-large;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-style: none;
+      color: black; }
+    .products2 div p {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-style: italic; }
+
+/*! ON SALE */
+.saleProductsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .saleProductsTitle div h2 {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-style: none;
+    color: black; }
+  .saleProductsTitle div a {
+    color: black; }
+    .saleProductsTitle div a:after {
+      background-color: black;
+      width: 100%;
+      height: 2px; }
+    .saleProductsTitle div a:hover {
+      font-weight: bold; }
+      .saleProductsTitle div a:hover:after {
+        transform: scaleX(1);
+        transform-origin: left; }
+
+.saleProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; }
+  .saleProducts div {
+    font-size: 0px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-style: none;
+    width: 500px;
+    border-radius: 40px;
+    border: white 10px solid; }
+    .saleProducts div img {
+      width: 400px;
+      height: 400px; }
+    .saleProducts div a {
+      color: black; }
+      .saleProducts div a:after {
+        background-color: black;
+        width: 100%;
+        height: 2px; }
+      .saleProducts div a:hover {
+        font-weight: bold; }
+        .saleProducts div a:hover:after {
+          transform: scaleX(1);
+          transform-origin: left; }
+    .saleProducts div h3 {
+      font-size: x-large;
+      color: black; }
+    .saleProducts div p {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-style: italic; }
+
+.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.5px; }
+
+.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in; }
+
+/* ^ ---------SHOP--------- */
+.titleShop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .titleShop h1 {
+    font-size: 55px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-style: none; }
+  .titleShop h2 {
+    font-size: 60px;
+    background: -webkit-linear-gradient(45deg, #2c1f89, #5715cf 24%, #9613dd 45%, #a411dc 76%, #e068a6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    padding: 20px; }
+
+.shopProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  text-align: center; }
+  .shopProducts div {
+    width: 400px;
+    height: 500px; }
+    .shopProducts div img {
+      width: 250px;
+      height: 350px; }
+    .shopProducts div h3 {
+      font-size: x-large;
+      margin-bottom: 20px; }
+    .shopProducts div p {
+      font-size: 18px;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 25px;
+      font-style: italic; }
+    .shopProducts div a {
+      color: black; }
+      .shopProducts div a:after {
+        background-color: black;
+        width: 100%;
+        height: 2px; }
+      .shopProducts div a:hover {
+        font-weight: bold; }
+        .shopProducts div a:hover:after {
+          transform: scaleX(1);
+          transform-origin: left; }
+
+.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.5px; }
+
+.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in; }
+
+/*! --------CONTACT-------- */
+.contactCover {
+  background-image: url(../img/backgroundContact.jpg);
+  width: 100%;
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contactCover div {
+    text-align: center; }
+    .contactCover div h1 {
+      color: white;
+      font-size: 70px;
+      margin-bottom: 20px; }
+    .contactCover div p {
+      color: white;
+      font-size: 28px;
+      font-weight: 400;
+      font-family: Raleway;
+      text-transform: uppercase; }
+
+.asideContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 60px;
+  margin-bottom: 150px; }
+  .asideContact ul {
+    list-style: none;
+    width: 400px;
+    height: 900px;
+    background-color: #538590; }
+    .asideContact ul li {
+      margin: 40px; }
+      .asideContact ul li h2 {
+        font-size: 35px;
+        margin-top: 180px;
+        color: white; }
+      .asideContact ul li h3 {
+        color: white; }
+      .asideContact ul li p {
+        color: white; }
+      .asideContact ul li a {
+        color: white;
+        text-decoration: none; }
+  .asideContact form {
+    width: 700px;
+    height: 900px; }
+    .asideContact form div {
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px; }
+      .asideContact form div label[for=name] {
+        font-size: 20px;
+        padding-inline: 5px;
+        font-weight: bold; }
+      .asideContact form div input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box; }
+      .asideContact form div label[for=email] {
+        font-size: 20px;
+        font-weight: bold; }
+      .asideContact form div input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box; }
+      .asideContact form div select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        color: #7a7a7a;
+        border-radius: 4px;
+        box-sizing: border-box; }
+      .asideContact form div label[for=text] {
+        font-size: 20px;
+        font-weight: bold; }
+      .asideContact form div textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px; }
+      .asideContact form div input[type=submit] {
+        background-color: #f5f5f7;
+        border: black 1px solid;
+        color: black;
+        padding: 14px 15px;
+        text-decoration: none;
+        border-radius: 5px; }
+        .asideContact form div input[type=submit]:hover {
+          color: white;
+          background-color: #3b4c5c;
+          transition: 0.5s; }
+    .asideContact form h3 {
+      font-size: 35px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-style: none; }
+
+.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.5px; }
+
+.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in; }
+
+/*!--------------HELP / SUPPORT------------ */
+.supportCover {
+  background-image: url(../img/coverSupport.jpg);
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .supportCover div {
+    text-align: left;
+    margin-right: 500px; }
+    .supportCover div h1 {
+      color: white;
+      font-size: 50px;
+      margin-bottom: 20px; }
+    .supportCover div p {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 20px; }
+
+.supportIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .supportIcons div {
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .supportIcons div img {
+      width: 75px;
+      height: 75px;
+      margin-bottom: 30px; }
+    .supportIcons div a {
+      text-decoration: none;
+      color: black; }
+
+.supportData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; }
+  .supportData div {
+    font-size: 0px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-style: none;
+    width: 500px;
+    height: 350px; }
+    .supportData div img {
+      width: 450px;
+      height: 250px;
+      margin-top: 50px; }
+    .supportData div h2 {
+      font-size: 45px;
+      text-align: left;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-style: none;
+      color: black; }
+    .supportData div a {
+      color: black; }
+      .supportData div a:after {
+        background-color: black;
+        width: 100%;
+        height: 2px; }
+      .supportData div a:hover {
+        font-weight: bold; }
+        .supportData div a:hover:after {
+          transform: scaleX(1);
+          transform-origin: left; }
+    .supportData div h3 {
+      font-size: x-large;
+      color: black; }
+    .supportData div p {
+      font-size: 20px;
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-style: italic; }
+
+.supportData2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .supportData2 div {
+    font-size: 0px;
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 110px;
+    font-style: none;
+    width: 500px;
+    height: 400px; }
+    .supportData2 div img {
+      width: 450px;
+      height: 250px;
+      margin-top: 100px;
+      margin-bottom: 20px; }
+    .supportData2 div h2 {
+      font-size: 45px;
+      text-align: right;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-style: none;
+      color: black; }
+    .supportData2 div a {
+      color: black; }
+      .supportData2 div a:after {
+        background-color: black;
+        width: 100%;
+        height: 2px; }
+      .supportData2 div a:hover {
+        font-weight: bold; }
+        .supportData2 div a:hover:after {
+          transform: scaleX(1);
+          transform-origin: left; }
+    .supportData2 div h3 {
+      font-size: x-large;
+      color: black; }
+    .supportData2 div p {
+      font-size: 20px;
+      text-align: right;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-style: italic; }
+
+.supportData3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; }
+  .supportData3 div {
+    font-size: 0px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    font-style: none;
+    width: 500px;
+    height: 400px; }
+    .supportData3 div img {
+      width: 450px;
+      height: 250px;
+      margin-top: 85px; }
+    .supportData3 div h2 {
+      font-size: 45px;
+      text-align: left;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-style: none;
+      color: black; }
+    .supportData3 div a {
+      color: black; }
+      .supportData3 div a:after {
+        background-color: black;
+        width: 100%;
+        height: 2px; }
+      .supportData3 div a:hover {
+        font-weight: bold; }
+        .supportData3 div a:hover:after {
+          transform: scaleX(1);
+          transform-origin: left; }
+    .supportData3 div h3 {
+      font-size: x-large;
+      color: black; }
+    .supportData3 div p {
+      font-size: 20px;
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-style: italic; }
+
+.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.5px; }
+
+.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in; }
+
+/*!---------ABOUT----------*/
+.aboutCover {
+  background-image: url(../img/iphone14Hero.jpg);
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; }
+  .aboutCover div {
+    width: 500px;
+    text-align: center;
+    margin-top: 100px; }
+    .aboutCover div h1 {
+      color: white;
+      font-size: 50px; }
+
+.text1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .text1 div {
+    text-align: left;
+    width: 1150px;
+    height: 500px;
+    margin-top: 100px; }
+    .text1 div p {
+      color: #9613dd;
+      background-color: white;
+      font-size: 40px;
+      margin-bottom: 30px; }
+
+.text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9613dd; }
+  .text2 div {
+    text-align: left;
+    width: 1150px;
+    height: 700px; }
+    .text2 div h2 {
+      font-size: 40px;
+      text-align: start;
+      margin-top: 80px;
+      margin-bottom: 20px;
+      font-style: none;
+      color: white; }
+    .text2 div p {
+      font-size: 30px;
+      text-align: left;
+      margin-top: 0px;
+      margin-bottom: 50px;
+      font-style: italic;
+      color: white; }
+
+.aboutImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .aboutImages div {
+    height: 400px;
+    margin-inline: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .aboutImages div img {
+      width: 400px;
+      height: 400px; }
+
+.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.5px; }
+
+.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in; }
+
+footer {
+  grid-area: footer;
+  background-color: #646568;
+  padding: 70px 0; }
+
+.container {
+  max-width: 1170px;
+  margin: auto; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+ul {
+  list-style: none;
+  padding-left: 0rem; }
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px; }
+  .footer-col h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative; }
+    .footer-col h4::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #971DBC;
+      width: 50px;
+      height: 2px;
+      box-sizing: border-box; }
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px; }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease; }
+    .footer-col ul li a:hover {
+      color: white;
+      padding-left: 8px; }
+  .footer-col .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease; }
+    .footer-col .social-links a:hover {
+      color: #24262b;
+      background-color: white; }
+
+/*! -----------MEDIA QUERY-------------*/
+@media screen and (max-width: 1900px) {
+  /* .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 800px;
+        width: 2000px;
+        margin-top: 100px;
+    }
+    .text2 div h2{
+        color: white;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .text2 div p{
+        color: white;
+        font-size: 30px;
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-bottom: 50px;
+        text-align: left;
+    } */ }
+
+@media screen and (max-width: 1600px) {
+  .ipadCover {
+    background-image: url(../img/backgroundPink.jpg); }
+  /* ---ABOUT--- */
+  /* .text2 div{
+        background-color: #9613dd;
+        text-align: left;
+        height: 900px;
+        width: 1900px;
+        margin-top: 100px;
+    } */ }
+
+@media screen and (max-width: 1440px) {
+  .products div {
+    width: 350px; }
+  .hero {
+    background-image: url(../img/heroSection/montereyMobile.jpg);
     width: 100%;
     /* height: 90vh; */
     height: calc(100vh - 50px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     display: flex;
     justify-content: center;
     align-items: center; }
-    main .hero div h1 {
-      color: white;
-      /* background-color: rgba(255, 255, 255, 0.5); */
-      border-radius: 10px;
-      font-size: 65px;
-      font-weight: bold;
-      margin-bottom: 30px;
-      font-family: Styrene A Web, sans-serif; }
-    main .hero div .heroWrapper {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      margin-top: 20px; }
-      main .hero div .heroWrapper .heroButton {
-        height: 60px;
-        width: 60px;
-        float: left;
-        margin: 0 5px;
-        overflow: hidden;
-        background: #fff;
-        border-radius: 50px;
-        cursor: pointer;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease-out;
-        text-decoration: none; }
-        main .hero div .heroWrapper .heroButton:hover {
-          background-color: grey; }
-        main .hero div .heroWrapper .heroButton .heroIcon {
-          display: inline-block;
-          height: 60px;
-          width: 60px;
-          text-align: center;
-          border-radius: 50px;
-          box-sizing: border-box;
-          line-height: 60px;
-          transition: all 0.5s ease-out; }
-          main .hero div .heroWrapper .heroButton .heroIcon i {
-            font-size: 25px;
-            line-height: 60px;
-            transition: all 0.5s ease-out;
-            color: black; }
-          main .hero div .heroWrapper .heroButton .heroIcon:hover {
-            color: #fff; }
-  main .productsTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-    main .productsTitle div {
-      width: 450px; }
-      main .productsTitle div h2 {
-        color: black;
-        font-size: 45px;
-        text-align: center;
-        margin-bottom: 20px;
-        margin-top: 100px; }
-      main .productsTitle div p {
-        font-style: italic;
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 30px; }
-  main .products {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row-reverse; }
-    main .products div {
-      text-align: center;
-      width: 450px;
-      border-radius: 40px;
-      border: #ffffff 10px solid;
-      margin-top: 20px;
-      margin-bottom: 100px; }
-      main .products div img {
-        height: 300px;
-        width: 300px;
-        margin-bottom: 20px; }
-      main .products div a {
-        position: relative;
-        text-decoration: none;
-        /* font-family: 'SamsungOne',arial,sans-serif; */
-        color: black;
-        font-size: 20px;
-        letter-spacing: 0.5px; }
-        main .products div a::after {
-          content: "";
-          position: absolute;
-          background-color: black;
-          height: 2px;
-          width: 100%;
-          left: 0;
-          bottom: -5px;
-          transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 250ms ease-in; }
-        main .products div a:hover {
-          font-weight: bold; }
-        main .products div a:hover:after {
-          transform: scaleX(1);
-          transform-origin: left; }
-      main .products div h3 {
-        font-size: x-large;
-        color: black; }
-      main .products div p {
-        font-style: italic;
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 30px; }
-  main .iphoneCover {
-    background-image: url(../img/heroIphone14Pro.png);
+  .iphoneCover {
+    background-image: url(../img/heroIphone14Pro2.png);
     display: flex;
     width: 100%;
     height: 80vh;
@@ -174,65 +1155,41 @@ main {
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    background-attachment: fixed; }
-    main .iphoneCover div {
-      text-align: center; }
-      main .iphoneCover div h2 {
-        color: black;
-        font-size: 60px;
-        margin-bottom: 20px; }
-      main .iphoneCover div h3 {
-        color: black;
-        font-size: 30px;
-        margin-bottom: 35px; }
-      main .iphoneCover div div .iphoneButton {
-        position: relative;
-        border: 0;
-        display: inline-block;
-        width: 12rem;
-        height: auto;
-        cursor: pointer;
-        outline: none;
-        vertical-align: middle;
-        background: transparent; }
-        main .iphoneCover div div .iphoneButton:hover .iphoneCircle {
-          position: relative;
-          display: block;
-          margin: 0;
-          width: 3rem;
-          height: 3rem;
-          background-image: linear-gradient(90deg, #2c1f89, #5715cf 24%, #9613dd 45%, #a411dc 76%, #e068a6);
-          border-radius: 1.625rem;
-          transition: all 0.4s ease-in-out;
-          width: 100%; }
-          main .iphoneCover div div .iphoneButton:hover .iphoneCircle .iphoneIcon {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            background: black; }
-          main .iphoneCover div div .iphoneButton:hover .iphoneCircle .iphoneArrow {
-            left: 0.625rem;
-            width: 1.125rem;
-            height: 0.125rem;
-            background: none;
-            transition: all 0.4s ease-in-out;
-            background: white;
-            transform: translateX(1rem); }
-            main .iphoneCover div div .iphoneButton:hover .iphoneCircle .iphoneArrow::before {
-              content: "";
-              position: absolute;
-              top: -0.25rem;
-              right: 0.0625rem;
-              width: 0.625rem;
-              height: 0.625rem;
-              border-top: 0.125rem solid white;
-              border-right: 0.125rem solid white;
-              transform: rotate(45deg); }
-        main .iphoneCover div div .iphoneButton:hover .iphoneText {
-          color: white; }
-  main .ipadCover {
-    background-image: url(../img/heroSection/coverIpad3.png);
+    background-attachment: scroll; }
+  .iphoneCover div h2 {
+    color: white;
+    font-size: 60px;
+    /* font-weight: bolder; */
+    margin-bottom: 20px; }
+  .iphoneCover div h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 35px; }
+  .iphoneText {
+    font-size: 1.2rem;
+    position: absolute;
+    inset: 0;
+    padding: 0rem 0;
+    margin-left: 0rem;
+    color: #9613dd;
+    line-height: 1;
+    text-align: center;
+    transition: all 0.4s ease-in-out; }
+  .iphoneCircle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-image: linear-gradient(90deg, #2c1f89, #5715cf 24%, #9613dd 45%, #a411dc 76%, #e068a6);
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+    display: none; }
+  .iphoneButton:hover .iphoneText {
+    color: #9613dd; }
+  .ipadCover {
+    background-image: url(../img/backgroundPinkMobile.jpg);
     display: flex;
     width: 100%;
     height: 80vh;
@@ -241,284 +1198,929 @@ main {
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    background-attachment: fixed; }
-    main .ipadCover div {
-      text-align: center; }
-      main .ipadCover div h2 {
-        color: white;
-        font-size: 60px;
-        margin-bottom: 20px; }
-      main .ipadCover div h3 {
-        color: white;
-        font-size: 30px;
-        margin-bottom: 40px; }
-      main .ipadCover div div .ipadButton {
-        position: relative;
-        border: 0;
-        display: inline-block;
-        width: 12rem;
-        height: auto;
-        cursor: pointer;
-        outline: none;
-        vertical-align: middle;
-        background: transparent; }
-        main .ipadCover div div .ipadButton:hover .circle {
-          position: relative;
-          display: block;
-          margin: 0;
-          width: 3rem;
-          height: 3rem;
-          background-color: white;
-          border-radius: 1.625rem;
-          transition: all 0.4s ease-in-out;
-          width: 100%; }
-          main .ipadCover div div .ipadButton:hover .circle .ipadIcon {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            background: black; }
-          main .ipadCover div div .ipadButton:hover .circle .ipadArrow {
-            left: 0.625rem;
-            width: 1.125rem;
-            height: 0.125rem;
-            background: none;
-            transition: all 0.4s ease-in-out;
-            background: black;
-            transform: translateX(1rem); }
-            main .ipadCover div div .ipadButton:hover .circle .ipadArrow::before {
-              content: "";
-              position: absolute;
-              top: -0.25rem;
-              right: 0.0625rem;
-              width: 0.625rem;
-              height: 0.625rem;
-              border-top: 0.125rem solid black;
-              border-right: 0.125rem solid black;
-              transform: rotate(45deg); }
-        main .ipadCover div div .ipadButton:hover .text {
-          color: black; }
-  main .products2Title {
+    background-attachment: scroll; }
+  .text {
+    font-size: 1.2rem;
+    position: absolute;
+    inset: 0;
+    padding: 0rem 0;
+    margin-left: 0rem;
+    color: white;
+    line-height: 1;
+    text-align: center;
+    transition: all 0.4s ease-in-out; }
+  .circle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+    display: none; }
+  .ipadButton:hover .text {
+    color: white; }
+  .hero div h1 {
+    font-size: 55px; }
+  .products {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; }
-    main .products2Title div h2 {
-      color: black;
-      font-size: 45px;
-      text-align: center;
-      margin-bottom: 20px;
-      margin-top: 100px; }
-    main .products2Title div a {
-      position: relative;
-      text-decoration: none;
-      /* font-family: 'SamsungOne',arial,sans-serif; */
-      color: black;
-      font-size: 20px;
-      letter-spacing: 0.5px; }
-      main .products2Title div a:after {
-        content: "";
-        position: absolute;
-        background-color: black;
-        height: 2px;
-        width: 100%;
-        left: 0;
-        bottom: -5px;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 250ms ease-in; }
-      main .products2Title div a:hover {
-        font-weight: bold; }
-      main .products2Title div a:hover:after {
-        transform: scaleX(1);
-        transform-origin: left; }
-  main .products2 {
+    flex-direction: column; }
+  .products div {
+    height: 450px; }
+  .products2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; }
-    main .products2 div {
-      text-align: center;
-      width: 500px;
-      /* height: 700px; */
-      /* background-color: grey; */
-      border-radius: 40px;
-      border: #ffffff 25px solid;
-      margin-top: 30px;
-      margin-bottom: 100px; }
-      main .products2 div img {
-        height: 300px;
-        width: 250px; }
-      main .products2 div h2 {
-        color: black;
-        font-size: 45px;
-        text-align: center;
-        margin-bottom: 20px; }
-      main .products2 div a {
-        position: relative;
-        text-decoration: none;
-        /* font-family: 'SamsungOne',arial,sans-serif; */
-        color: black;
-        font-size: 20px;
-        letter-spacing: 0.5px; }
-        main .products2 div a:after {
-          content: "";
-          position: absolute;
-          background-color: black;
-          height: 2px;
-          width: 100%;
-          left: 0;
-          bottom: -5px;
-          transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 250ms ease-in; }
-        main .products2 div a:hover {
-          font-weight: bold; }
-        main .products2 div a:hover:after {
-          transform: scaleX(1);
-          transform-origin: left; }
-      main .products2 div h3 {
-        font-size: x-large;
-        color: black;
-        margin-top: 20px;
-        margin-bottom: 20px; }
-      main .products2 div p {
-        font-style: italic;
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 30px; }
-  main .saleProductsTitle {
+    flex-direction: column; }
+  .products2 div {
+    height: 450px; }
+  .saleProducts {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; }
-    main .saleProductsTitle div h2 {
-      color: black;
-      font-size: 45px;
-      text-align: center;
-      margin-bottom: 20px;
-      margin-top: 100px; }
-    main .saleProductsTitle div a {
-      position: relative;
-      text-decoration: none;
-      /* font-family: 'SamsungOne',arial,sans-serif; */
-      color: black;
-      font-size: 20px;
-      letter-spacing: 0.5px; }
-      main .saleProductsTitle div a:after {
-        content: "";
-        position: absolute;
-        background-color: black;
-        height: 2px;
-        width: 100%;
-        left: 0;
-        bottom: -5px;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 250ms ease-in; }
-      main .saleProductsTitle div a:hover {
-        font-weight: bold; }
-      main .saleProductsTitle div a:hover:after {
-        transform: scaleX(1);
-        transform-origin: left; }
-  main .saleProducts {
+    flex-direction: column; }
+  .saleProducts div {
+    height: 450px; }
+  .saleProducts div img {
+    width: 320px;
+    height: 320px; }
+  /* ---CONTACT--- */
+  .contactCover {
+    background-image: url(../img/backgroundContact2.jpg);
     display: flex;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     justify-content: center;
+    align-items: center; }
+  .asideContact ul {
+    list-style: none;
+    width: 300px;
+    height: 900px;
+    background-color: #538590; }
+  .asideContact form {
+    width: 600px;
+    height: 900px; }
+  /* ----HELP----- */
+  .supportCover {
+    background-image: url(../img/coverSoporte.jpg);
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center; }
+  /* ------------ABOUT--------- */
+  .aboutCover {
+    background-image: url(../img/iphone14HeroMobile2.jpg);
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: start;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row-reverse; }
-    main .saleProducts div img {
-      height: 400px;
-      width: 400px; }
-    main .saleProducts div a {
-      position: relative;
-      text-decoration: none;
-      /* font-family: 'SamsungOne',arial,sans-serif; */
-      color: black;
-      font-size: 20px;
-      letter-spacing: 0.5px; }
-      main .saleProducts div a:after {
-        content: "";
-        position: absolute;
-        background-color: black;
-        height: 2px;
-        width: 100%;
-        left: 0;
-        bottom: -5px;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 250ms ease-in; }
-      main .saleProducts div a:hover {
-        font-weight: bold; }
-      main .saleProducts div a:hover:after {
-        transform: scaleX(1);
-        transform-origin: left; }
-    main .saleProducts div h3 {
-      font-size: x-large;
-      color: black; }
-    main .saleProducts div p {
-      font-style: italic;
-      font-size: 20px;
-      margin-top: 20px;
-      margin-bottom: 30px; }
+    flex-direction: column; }
+  .text1 div {
+    text-align: left;
+    height: 650px;
+    width: 900px;
+    margin-top: 100px; }
+  .text2 div {
+    background-color: #9613dd;
+    text-align: left;
+    height: 850px;
+    width: 900px;
+    /* margin-top: 100px; */ } }
 
-footer {
-  grid-area: footer;
-  background-color: #646568;
-  padding: 70px 0; }
-  footer .container {
-    max-width: 1170px;
-    margin: auto; }
-    footer .container .row {
-      display: flex;
-      flex-wrap: wrap; }
-      footer .container .row .footer-col {
-        width: 25%;
-        padding: 0 15px; }
-        footer .container .row .footer-col h4 {
-          font-size: 18px;
-          color: #ffffff;
-          text-transform: capitalize;
-          margin-bottom: 35px;
-          font-weight: 500;
-          position: relative; }
-          footer .container .row .footer-col h4::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            background-color: #e91e63;
-            background-color: #971DBC;
-            height: 2px;
-            box-sizing: border-box;
-            width: 50px; }
-        footer .container .row .footer-col ul {
-          padding-left: 0rem; }
-          footer .container .row .footer-col ul li:not(:last-child) {
-            margin-bottom: 10px; }
-          footer .container .row .footer-col ul li a {
-            font-size: 16px;
-            text-transform: capitalize;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 300;
-            color: #bbbbbb;
-            display: block;
-            transition: all 0.3s ease; }
-            footer .container .row .footer-col ul li a:hover {
-              color: #ffffff;
-              padding-left: 8px; }
-        footer .container .row .footer-col .social-links a {
-          display: inline-block;
-          height: 40px;
-          width: 40px;
-          background-color: rgba(255, 255, 255, 0.2);
-          margin: 0 10px 10px 0;
-          text-align: center;
-          line-height: 40px;
-          border-radius: 50%;
-          color: #ffffff;
-          transition: all 0.5s ease; }
-          footer .container .row .footer-col .social-links a:hover {
-            color: #24262b;
-            background-color: #ffffff; }
+@media screen and (max-width: 1200px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 56px auto 400px;
+    gap: 0px 0px;
+    grid-template-areas: "header header" "main main" "footer footer"; }
+  .hero div h1 {
+    font-size: 55px; }
+  .hero {
+    background-image: url(../img/heroSection/montereyMobile.jpg);
+    width: 100%;
+    /* height: 90vh; */
+    height: calc(100vh - 50px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .iphoneCover {
+    background-image: url(../img/heroIphone14Pro2.png);
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll; }
+  .iphoneCover div h2 {
+    color: white;
+    font-size: 60px;
+    /* font-weight: bolder; */
+    margin-bottom: 20px; }
+  .iphoneCover div h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 35px; }
+  .iphoneText {
+    font-size: 1.2rem;
+    position: absolute;
+    inset: 0;
+    padding: 0rem 0;
+    margin-left: 0rem;
+    color: #9613dd;
+    line-height: 1;
+    text-align: center;
+    transition: all 0.4s ease-in-out; }
+  .iphoneCircle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-image: linear-gradient(90deg, #2c1f89, #5715cf 24%, #9613dd 45%, #a411dc 76%, #e068a6);
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+    display: none; }
+  .iphoneButton:hover .iphoneText {
+    color: #9613dd; }
+  .ipadCover {
+    background-image: url(../img/backgroundPinkMobile.jpg);
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll; }
+  .text {
+    font-size: 1.2rem;
+    position: absolute;
+    inset: 0;
+    padding: 0rem 0;
+    margin-left: 0rem;
+    color: white;
+    line-height: 1;
+    text-align: center;
+    transition: all 0.4s ease-in-out; }
+  .circle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+    display: none; }
+  .ipadButton:hover .text {
+    color: white; }
+  .hero div h1 {
+    font-size: 55px; }
+  .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .products div {
+    height: 450px; }
+  .products2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .products2 div {
+    height: 450px; }
+  .saleProducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .saleProducts div {
+    height: 450px; }
+  .saleProducts div img {
+    width: 320px;
+    height: 320px; }
+  /* --------ABOUT--------*/
+  .text1 div {
+    text-align: left;
+    height: 850px;
+    width: 600px;
+    margin-top: 100px; }
+  .text2 div h2 {
+    text-align: left; }
+  .text2 div {
+    background-color: #9613dd;
+    text-align: left;
+    height: 1000px;
+    width: 600px;
+    /* margin-top: 100px; */ } }
+
+@media screen and (max-width: 1024px) {
+  .hero div h1 {
+    font-size: 55px; }
+  .hero {
+    background-image: url(../img/heroSection/montereyMobile.jpg);
+    width: 100%;
+    /* height: 90vh; */
+    height: calc(100vh - 50px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .iphoneCover {
+    background-image: url(../img/heroIphone14Pro2.png);
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll; }
+  .iphoneCover div h2 {
+    color: white;
+    font-size: 60px;
+    /* font-weight: bolder; */
+    margin-bottom: 20px; }
+  .iphoneCover div h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 35px; }
+  .iphoneText {
+    font-size: 1.2rem;
+    position: absolute;
+    inset: 0;
+    padding: 0rem 0;
+    margin-left: 0rem;
+    color: #9613dd;
+    line-height: 1;
+    text-align: center;
+    transition: all 0.4s ease-in-out; }
+  .iphoneCircle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-image: linear-gradient(90deg, #2c1f89, #5715cf 24%, #9613dd 45%, #a411dc 76%, #e068a6);
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+    display: none; }
+  .iphoneButton:hover .iphoneText {
+    color: #9613dd; }
+  .ipadCover {
+    background-image: url(../img/backgroundPinkMobile.jpg);
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll; }
+  .text {
+    font-size: 1.2rem;
+    position: absolute;
+    inset: 0;
+    padding: 0rem 0;
+    margin-left: 0rem;
+    color: white;
+    line-height: 1;
+    text-align: center;
+    transition: all 0.4s ease-in-out; }
+  .circle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+    display: none; }
+  .ipadButton:hover .text {
+    color: white; }
+  /* -----CONTACT----- */
+  .contactCover {
+    background-image: url(../img/backgroundContact3.jpg);
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center; }
+  .asideContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 60px; }
+  .asideContact ul {
+    text-align: center;
+    list-style: none;
+    width: 600px;
+    height: 600px;
+    background-color: #538590; }
+  .asideContact ul li h2 {
+    font-size: 35px;
+    margin-top: 80px;
+    color: white; }
+  .contactCover div {
+    text-align: center; }
+  .contactCover div h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px; }
+  .contactCover div p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Raleway;
+    text-transform: uppercase; }
+  /* -------HELP-------- */
+  .supportCover div {
+    text-align: center;
+    margin-right: 0px; }
+  .supportIcons div img {
+    height: 75px;
+    width: 75px;
+    margin-bottom: 30px; }
+  .supportIcons div {
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  /* ----------ABOUT------- */
+  .aboutCover {
+    background-image: url(../img/iphone14HeroMobile.jpg);
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column; }
+  .text1 div {
+    text-align: left;
+    height: 850px;
+    width: 600px;
+    margin-top: 100px; }
+  .text2 div {
+    background-color: #9613dd;
+    text-align: left;
+    height: 1000px;
+    width: 600px;
+    /* margin-top: 100px; */ } }
+
+@media screen and (max-width: 767px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 56px auto 600px;
+    gap: 0px 0px;
+    grid-template-areas: "header" "main" "footer"; }
+  .hero {
+    background-image: url(../img/heroSection/montereyMobile.jpg);
+    width: 100%;
+    /* height: 90vh; */
+    height: calc(100vh - 50px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .iphoneCover {
+    background-image: url(../img/heroIphone14Pro2.png);
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll; }
+  .iphoneCover div h2 {
+    color: white;
+    font-size: 60px;
+    /* font-weight: bolder; */
+    margin-bottom: 20px; }
+  .iphoneCover div h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 35px; }
+  .ipadCover {
+    background-image: url(../img/backgroundPinkMobile.jpg);
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll; }
+  .iphoneText {
+    font-size: 1.2rem;
+    position: absolute;
+    inset: 0;
+    padding: 0rem 0;
+    margin-left: 0rem;
+    color: #9613dd;
+    line-height: 1;
+    text-align: center;
+    transition: all 0.4s ease-in-out; }
+  .iphoneCircle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-image: linear-gradient(90deg, #2c1f89, #5715cf 24%, #9613dd 45%, #a411dc 76%, #e068a6);
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+    display: none; }
+  .iphoneButton:hover .iphoneText {
+    color: #9613dd; }
+  .text {
+    font-size: 1.2rem;
+    position: absolute;
+    inset: 0;
+    padding: 0rem 0;
+    margin-left: 0rem;
+    color: white;
+    line-height: 1;
+    text-align: center;
+    transition: all 0.4s ease-in-out; }
+  .circle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 1.625rem;
+    transition: all 0.4s ease-in-out;
+    display: none; }
+  .ipadButton:hover .text {
+    color: white; }
+  .hero div h1 {
+    font-size: 45px; }
+  .productsTitle div h2 {
+    font-size: 32px; }
+  .iphoneCover div h2 {
+    font-size: 40px; }
+  .iphoneCover div h3 {
+    font-size: 28px; }
+  .products2Title div h2 {
+    font-size: 32px; }
+  .ipadCover div h2 {
+    font-size: 40px; }
+  .ipadCover div h3 {
+    font-size: 28px; }
+  .saleProductsTitle div h2 {
+    font-size: 32px; }
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px; }
+  /* -----------CONTACT----------- */
+  .asideContact ul {
+    text-align: center;
+    list-style: none;
+    width: 400px;
+    height: 600px;
+    background-color: #538590; }
+  .asideContact ul li h2 {
+    font-size: 35px;
+    margin-top: 80px;
+    color: white; }
+  .contactCover div {
+    text-align: center; }
+  .contactCover div h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px; }
+  .contactCover div p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Raleway;
+    text-transform: uppercase; }
+  .asideContact form {
+    width: 400px;
+    height: 900px; }
+  /* -------HELP-------- */
+  .supportCover {
+    background-image: url(../img/coverSoporte2.jpg);
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center; }
+  .supportCover div {
+    text-align: center;
+    margin-right: 0px; }
+  .supportIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column; }
+  .supportIcons div img {
+    height: 75px;
+    width: 75px;
+    margin-bottom: 30px; }
+  .supportIcons div {
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  /* -----ABOUT------- */
+  .text1 div {
+    text-align: left;
+    height: 1200px;
+    width: 400px;
+    margin-top: 100px; }
+  .text2 div {
+    background-color: #9613dd;
+    text-align: left;
+    height: 1400px;
+    width: 400px;
+    /* margin-top: 100px; */ } }
+
+@media screen and (max-width: 574px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 56px auto 1000px;
+    gap: 0px 0px;
+    grid-template-areas: "header" "main" "footer"; }
+  .hero div h1 {
+    color: white;
+    background-color: transparent;
+    /* border-radius: 10px; */
+    font-size: 38px;
+    margin-bottom: 30px;
+    font-family: Styrene A Web, sans-serif; }
+  .footer-col {
+    width: 100%;
+    text-align: center; }
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    background-color: #971DBC;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    display: none; }
+  .titleShop h1 {
+    font-size: 40px; }
+  .titleShop h2 {
+    font-size: 50px; }
+  /* -------CONTACT--------- */
+  .asideContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 60px; }
+  .asideContact ul {
+    text-align: center;
+    list-style: none;
+    width: 300px;
+    height: 700px;
+    background-color: #538590; }
+  .asideContact ul li h2 {
+    font-size: 35px;
+    margin-top: 80px;
+    color: white; }
+  .contactCover div {
+    text-align: center; }
+  .contactCover div h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px; }
+  .contactCover div p {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Raleway;
+    text-transform: uppercase; }
+  .asideContact form {
+    width: 300px;
+    height: 1000px; }
+  /* ---------HELP------------ */
+  .supportData div {
+    text-align: left;
+    width: 350px;
+    height: 350px;
+    /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+    margin-top: 50px;
+    margin-bottom: 80px; }
+  .supportData div img {
+    height: 200px;
+    width: 350px;
+    margin-top: 50px; }
+  .supportData2 div {
+    text-align: left;
+    width: 350px;
+    height: 450px;
+    /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+    margin-top: 50px;
+    margin-bottom: 80px; }
+  .supportData2 div img {
+    height: 200px;
+    width: 350px;
+    margin-top: 50px; }
+  .supportData3 div {
+    text-align: left;
+    width: 350px;
+    height: 450px;
+    /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+    margin-top: 50px;
+    margin-bottom: 80px; }
+  .supportData3 div img {
+    height: 200px;
+    width: 350px;
+    margin-top: 50px; }
+  /* --------ABOUT-------- */
+  .aboutCover div {
+    width: 400px;
+    text-align: center;
+    margin-top: 100px; }
+  .aboutCover div h1 {
+    color: white;
+    font-size: 40px; }
+  .text1 div {
+    text-align: left;
+    height: 900px;
+    width: 300px;
+    margin-top: 100px; }
+  .text2 div {
+    background-color: #9613dd;
+    text-align: left;
+    height: 1000px;
+    width: 300px;
+    /* margin-top: 100px; */ }
+  .text1 div p {
+    color: #9613dd;
+    background-color: white;
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .text2 div h2 {
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: left; }
+  .text2 div p {
+    color: white;
+    font-size: 20px;
+    /* margin-left: 350px;
+        margin-right: 350px; */
+    margin-bottom: 50px;
+    text-align: left; } }
+
+@media screen and (max-width: 500px) {
+  .hero div h1 {
+    font-size: 24px; }
+  .shopProducts div {
+    /* border:1px solid hsla(0,0%,63%,.25); */
+    height: 500px;
+    width: 300px; }
+  .productsTitle div {
+    width: 300px; }
+  .products2Title div {
+    width: 300px; }
+  .products div img {
+    width: 200px;
+    height: 200px; }
+  .products2 div img {
+    width: 150px;
+    height: 200px; }
+  .saleProducts div {
+    width: 300px; }
+  .productsTitle div img {
+    width: 200px;
+    height: 200px; }
+  .products2 div {
+    width: 300px; }
+  .saleProducts div img {
+    width: 200px;
+    height: 200px; }
+  /* -----CONTACT------ */
+  .contactCover div {
+    width: 200px;
+    text-align: center; }
+  .contactCover div h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px; }
+  .contactCover div p {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Raleway;
+    text-transform: uppercase; }
+  .asideContact ul {
+    text-align: center;
+    list-style: none;
+    width: 250px;
+    height: 700px;
+    background-color: #538590; }
+  .asideContact ul li {
+    width: 160px; }
+  .asideContact ul li h2 {
+    font-size: 25px;
+    margin-top: 80px;
+    color: white; }
+  .asideContact ul li P {
+    font-size: 12px; }
+  .asideContact ul li a {
+    font-size: 12px; }
+  .contactCover div {
+    text-align: center; }
+  .contactCover div h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px; }
+  .contactCover div p {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Raleway;
+    text-transform: uppercase; }
+  .asideContact form {
+    width: 250px;
+    height: 1000px; }
+  .asideContact form h3 {
+    font-size: 25px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  /* -------HELP--------- */
+  .supportCover div h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px; }
+  .supportCover div p {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px; }
+  .supportData div h2 {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .supportData2 div h2 {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .supportData3 div h2 {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .supportData div {
+    text-align: left;
+    width: 300px;
+    height: 300px;
+    /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+    margin-top: 50px;
+    margin-bottom: 80px; }
+  .supportData div img {
+    height: 200px;
+    width: 300px;
+    margin-top: 150px; }
+  .supportData2 div {
+    text-align: left;
+    width: 300px;
+    height: 350px;
+    /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+    margin-top: 50px;
+    margin-bottom: 80px; }
+  .supportData2 div img {
+    height: 200px;
+    width: 300px;
+    margin-top: 150px; }
+  .supportData3 div {
+    text-align: left;
+    width: 300px;
+    height: 400px;
+    /* border-top: hsla(0,0%,63%,.25) 2px solid; */
+    margin-top: 50px;
+    margin-bottom: 80px; }
+  .supportData3 div img {
+    height: 200px;
+    width: 300px;
+    margin-top: 150px; }
+  /*-------------ABOUT------------*/
+  .aboutCover div {
+    width: 300px;
+    text-align: center;
+    margin-top: 100px; }
+  .aboutCover div h1 {
+    color: white;
+    font-size: 40px; }
+  .text1 div {
+    text-align: left;
+    height: 750px;
+    width: 300px;
+    margin-top: 100px; }
+  .text2 div {
+    background-color: #9613dd;
+    text-align: left;
+    height: 1000px;
+    width: 300px; }
+  .text1 div p {
+    color: #9613dd;
+    background-color: white;
+    font-size: 25px;
+    margin-bottom: 30px; }
+  .text2 div h2 {
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: left; }
+  .text2 div p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: left; }
+  .aboutImages div {
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .aboutImages div img {
+    height: 300px;
+    width: 300px; } }
+
+@media screen and (max-width: 380px) {
+  .products div {
+    width: 250px; }
+  .products2 div {
+    width: 250px; }
+  .saleProducts div {
+    width: 250px; }
+  /* ----CONTACT------ */
+  .asideContact ul {
+    text-align: center;
+    list-style: none;
+    width: 230px;
+    height: 700px;
+    background-color: #538590; }
+  .asideContact form {
+    width: 230px;
+    height: 1000px; }
+  .asideContact ul li {
+    width: 140px; } }

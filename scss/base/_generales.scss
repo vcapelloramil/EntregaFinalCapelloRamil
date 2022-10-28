@@ -13,12 +13,12 @@ html{
 }
 
 .gridContainer{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 56px auto 400px; 
-    gap: 0px 0px; 
-    grid-template-areas: 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 56px auto 400px;
+    gap: 0px 0px;
+    grid-template-areas:
     "header header"
     "main main"
-    "footer footer"; 
+    "footer footer";
 }
