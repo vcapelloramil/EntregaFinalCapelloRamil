@@ -5,9 +5,6 @@
     }
 }
 @media screen and (max-width:1440px){
-    .products div{
-        width: 350px;
-    }
     .hero{
         background-image: url(../img/heroSection/montereyMobile.jpg);
         width: 100%;
@@ -49,7 +46,8 @@
         inset: 0;
         padding: 0rem 0;
         margin-left: 0rem;
-        color: #9613dd;
+        color: white;
+        font-weight: bolder;
         line-height: 1;
         text-align: center;
         transition: all 0.4s ease-in-out;
@@ -114,8 +112,9 @@
         align-items:center;
         flex-direction: column;
     }
-    .products div{
-        height: 450px;
+    .products .zoom{
+        width: 450px;
+        height: 500px;
     }
     .products2{
         display: flex;
@@ -123,8 +122,8 @@
         align-items:center;
         flex-direction: column;
     }
-    .products2 div{
-        height: 450px;
+    .products2 .zoom{
+        height: 525px;
     }
     .saleProducts{
         display: flex;
@@ -132,10 +131,10 @@
         align-items:center;
         flex-direction: column;
     }
-    .saleProducts div{
-        height: 450px;
+    .saleProducts .zoom{
+        height: 575px;
     }
-    .saleProducts div img{
+    .saleProducts .zoom img{
         width: 320px;
         height: 320px;
     }
@@ -319,8 +318,8 @@
         align-items:center;
         flex-direction: column;
     }
-    .products div{
-        height: 450px;
+    .products .zoom{
+        height: 500px;
     }
     .products2{
         display: flex;
@@ -328,8 +327,8 @@
         align-items:center;
         flex-direction: column;
     }
-    .products2 div{
-        height: 450px;
+    .products2 .zoom{
+        height: 525px;
     }
     .saleProducts{
         display: flex;
@@ -337,10 +336,10 @@
         align-items:center;
         flex-direction: column;
     }
-    .saleProducts div{
-        height: 450px;
+    .saleProducts .zoom{
+        height: 575px;
     }
-    .saleProducts div img{
+    .saleProducts .zoom img{
         width: 320px;
         height: 320px;
     }
@@ -479,7 +478,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        margin: 60px;
+        padding: 60px;
     }
     .asideContact ul{
         text-align: center;
@@ -513,17 +512,20 @@
         text-align: center;
         margin-right: 0px;
     }
-    .supportIcons div img{
+    .supportIcons .zoom img{
         height: 75px;
         width: 75px;
         margin-bottom: 30px;
     }
-    .supportIcons div{
+    .supportIcons .zoom{
         text-align:center;
         width: 250px;
-        height: 100px;
+        height: 150px;
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+    .supportIcons .zoom img{
+        margin-bottom: 20px;
     }
     /* ----------ABOUT------- */
     .aboutCover{
@@ -743,15 +745,15 @@
         flex-wrap:nowrap;
         flex-direction: column;
     }
-    .supportIcons div img{
+    .supportIcons .zoom img{
         height: 75px;
         width: 75px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
-    .supportIcons div{
+    .supportIcons .zoom{
         text-align:center;
         width: 200px;
-        height: 100px;
+        height: 150px;
         margin-top: 50px;
         margin-bottom: 50px;
     }
@@ -783,7 +785,7 @@
     .hero div h1{
         color: white;
         background-color: transparent;
-        font-size: 38px;
+        font-size: 1.875em;
         margin-bottom: 30px;
         font-family: Styrene A Web, sans-serif;
     }
@@ -803,6 +805,40 @@
         width: 50px;
         display: none;
     }
+    .productsTitle div{
+        width: 300px;
+    }
+    .products2Title div{
+        width: 300px;
+    }
+    .products .zoom img{
+        width: 200px;
+        height: 200px;
+    }
+    .products2 .zoom img{
+        width: 150px;
+        height: 200px;
+    }
+    .saleProducts .zoom{
+        width: 300px;
+        height: 450px;
+    }
+    .productsTitle div img{
+        width: 200px;
+        height: 200px;
+    }
+    .products2 .zoom{
+        width: 300px;
+        height: 500px;
+    }
+    .products .zoom{
+        width: 300px;
+        height: 450px;
+    }
+    .saleProducts .zoom img{
+        width: 200px;
+        height: 200px;
+    }
     .titleShop h1{
         font-size: 40px;
     }
@@ -815,7 +851,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        margin: 60px;
+        padding: 60px;
     }
     .asideContact ul{
         text-align: center;
@@ -846,44 +882,44 @@
     }
     .asideContact form{
         width: 300px;
-        height: 1000px;
+        height: 900px;
     }
     /* ---------HELP------------ */
     .supportData div{
         text-align:left;
         width: 350px;
-        height: 350px;
-        margin-top: 50px;
+        height: auto;
+        margin-top: 100px;
         margin-bottom: 80px;
     }
-    .supportData div img{
+    .supportData .zoom img{
         height: 200px;
         width: 350px;
-        margin-top: 50px;
+        margin-top: 0px;
     }
     .supportData2 div{
         text-align:left;
         width: 350px;
-        height: 450px;
+        height: auto;
         margin-top: 50px;
         margin-bottom: 80px;
     }
-    .supportData2 div img{
+    .supportData2 .zoom img{
         height: 200px;
         width: 350px;
-        margin-top: 50px;
+        margin-top: 0px;
     }
     .supportData3 div{
         text-align:left;
         width: 350px;
-        height: 450px;
+        height: auto;
         margin-top: 50px;
         margin-bottom: 80px;
     }
-    .supportData3 div img{
+    .supportData3 .zoom img{
         height: 200px;
         width: 350px;
-        margin-top: 50px;
+        margin-top: 0px;
     }
     /* --------ABOUT-------- */
     .aboutCover div{
@@ -929,9 +965,10 @@
 }
 @media screen and (max-width:500px){
     .hero div h1{
-        font-size: 24px;
+        font-size: 1.875em;
+        text-align: center;
     }
-    .shopProducts div{
+    .shopProducts .zoom{
         height: 500px;
         width: 300px;
     }
@@ -949,14 +986,14 @@
         width: 150px;
         height: 200px;
     }
-    .saleProducts div{
+    .saleProducts .zoom{
         width: 300px;
     }
     .productsTitle div img{
         width: 200px;
         height: 200px;
     }
-    .products2 div{
+    .products2 .zoom{
         width: 300px;
     }
     .saleProducts div img{
@@ -984,7 +1021,7 @@
         text-align: center;
         list-style: none;
         width: 250px;
-        height: 700px;
+        height: 625px;
         background-color: #538590;
     }
     .asideContact ul li{
@@ -1018,7 +1055,7 @@
     }
     .asideContact form{
         width: 250px;
-        height: 1000px;
+        height: 900px;
     }
     .asideContact form h3{
         font-size: 25px;
@@ -1044,7 +1081,7 @@
         margin-top: 30px;
         margin-bottom: 20px;
     }
-        .supportData2 div h2{
+    .supportData2 div h2{
         color: black;
         font-size: 30px;
         text-align: left;
@@ -1061,38 +1098,38 @@
     .supportData div{
         text-align:left;
         width: 300px;
-        height: 300px;
+        height: auto;
         margin-top: 50px;
         margin-bottom: 80px;
     }
-    .supportData div img{
+    .supportData .zoom img{
         height: 200px;
         width: 300px;
-        margin-top: 150px;
+        margin-top: 0px;
     }
     .supportData2 div{
         text-align:left;
         width: 300px;
-        height: 350px;
+        height: auto;
         margin-top: 50px;
         margin-bottom: 80px;
     }
-    .supportData2 div img{
+    .supportData2 .zoom img{
         height: 200px;
         width: 300px;
-        margin-top: 150px;
+        margin-top: 0px;
     }
     .supportData3 div{
         text-align:left;
         width: 300px;
-        height: 400px;
+        height: auto;
         margin-top: 50px;
         margin-bottom: 80px;
     }
-    .supportData3 div img{
+    .supportData3 .zoom img{
         height: 200px;
         width: 300px;
-        margin-top: 150px;
+        margin-top: 0px;
     }
     /*-------------ABOUT------------*/
     .aboutCover div{
@@ -1146,26 +1183,27 @@
     }
 }
 @media screen and (max-width:380px){
-    .products div{
-        width: 250px;
+    .products .zoom{
+        width: 300px;
+        height: 300;
     }
-    .products2 div{
-        width: 250px;
+    .products2 .zoom{
+        width: 300px;
     }
-    .saleProducts div{
-        width: 250px;
+    .saleProducts .zoom{
+        width: 300px;
     }
     /* ----CONTACT------ */
     .asideContact ul{
         text-align: center;
         list-style: none;
         width: 230px;
-        height: 700px;
+        height: 650px;
         background-color: #538590;
     }
     .asideContact form{
-        width: 230px;
-        height: 1000px;
+        width: 100%;
+        height: 900px;
     }
     .asideContact ul li{
         width: 140px;

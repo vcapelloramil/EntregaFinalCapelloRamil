@@ -3,6 +3,7 @@
 .titleShop {
 	@include flex (flex, center, center);
 	flex-direction: column;
+	background-color: nth($colores, 6);
 	h1 {
 		@include text (55px, center, 50px, 20px, none);
 	}
@@ -19,9 +20,19 @@
 .shopProducts {
 	@include flex (flex, center, center);
 	flex-wrap: wrap;
-	margin-bottom: 100px;
 	text-align: center;
-	div {
+	background-color: nth($colores, 6);
+	.zoom {
+		background-color: nth($colores, 1);
+		margin-top: 50px;
+		margin-bottom: 50px;
+		margin-left: 20px;
+		margin-right: 20px;
+		border-radius: 25px;
+		box-shadow: 5px 5px 10px #a3abe444;
+		&:hover{
+			transform: scale(1.1);
+		}
 		img {
 			@include whSize (250px, 350px);
 		}
@@ -48,6 +59,6 @@
 				}
 			}
 		}
-		@include whSize (400px, 500px);
+		@include whSize (400px, 525px);
 	}
 }

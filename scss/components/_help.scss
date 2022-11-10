@@ -24,15 +24,26 @@
 	@include flex (flex, center, center);
 	flex-wrap: wrap;
 	flex-direction: row;
-	div {
+	background-color: nth($colores, 6);
+	.zoom {
+		background-color: nth($colores, 1);
+		border-radius: 25px;
+		box-shadow: 5px 5px 10px #a3abe444;
+		transition: transform .75s;
+		&:hover{
+			transform: scale(1.1);
+		}
 		img {
 			@include whSize (75px, 75px);
-			margin-bottom: 30px;
+			margin-bottom: 20px;
+			margin-top: 10px;
 		}
 		text-align: center;
-		@include whSize (300px, 100px);
+		@include whSize (250px, 150px);
 		margin-top: 50px;
 		margin-bottom: 50px;
+		margin-right: 20px;
+		margin-left: 20px;
 		a {
 			text-decoration: none;
 			color: nth($colores, 2);
@@ -43,13 +54,19 @@
 	@include flex (flex, center, center);
 	flex-wrap: wrap;
 	flex-direction: row-reverse;
+	background-color: nth($colores, 6);
 	div {
 		img {
 			@include whSize (450px, 250px);
-			margin-top: 50px;
+			// margin-top: 50px;
+			box-shadow: 10px #a3abe444;
+			transition: transform .75s;
+			&:hover{
+				transform: scale(1.1);
+			}
 		}
 		@include text (0px, left, 50px, 80px, none);
-		@include whSize (500px, 350px);
+		@include whSize (500px, auto);
 		h2 {
 			@include text (45px, left, 30px, 20px, none);
 			color: nth($colores, 2);
@@ -83,14 +100,21 @@
 	@include flex (flex, center, center);
 	flex-wrap: wrap;
 	flex-direction: row;
+	background-color: nth($colores, 6);
 	div {
 		img {
 			@include whSize (450px, 250px);
-			margin-top: 100px;
+			// margin-top: 100px;
 			margin-bottom: 20px;
+			border-radius: 25px;
+			box-shadow: 5px 5px 10px #a3abe444;
+			transition: transform .75s;
+			&:hover{
+				transform: scale(1.1);
+			}
 		}
 		@include text (0px, right, 50px, 110px, none);
-		@include whSize (500px, 400px);
+		@include whSize (500px, auto);
 		h2 {
 			@include text (45px, right, 30px, 20px, none);
 			color: nth($colores, 2);
@@ -124,13 +148,20 @@
 	@include flex (flex, center, center);
 	flex-wrap: wrap;
 	flex-direction: row-reverse;
+	background-color: nth($colores, 6);
 	div {
 		img {
 			@include whSize (450px, 250px);
-			margin-top: 85px;
+			// margin-top: 85px;
+			border-radius: 25px;
+			box-shadow: 5px 5px 10px #a3abe444;
+			transition: transform .75s;
+			&:hover{
+				transform: scale(1.1);
+			}
 		}
-		@include text (0px, left, 50px, 200px, none);
-		@include whSize (500px, 400px);
+		@include text (0px, left, 50px, 100px, none);
+		@include whSize (500px, auto);
 		h2 {
 			@include text (45px, left, 30px, 20px, none);
 			color: nth($colores, 2);

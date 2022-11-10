@@ -24,12 +24,15 @@
 .asideContact {
 	@include flex (flex, center, center);
 	flex-direction: row-reverse;
-	margin: 60px;
-	margin-bottom: 150px;
+	padding: 60px;
+	padding-bottom: 150px;
+	background-color: nth($colores, 6);
 	ul {
 		list-style: none;
 		@include whSize (400px, 900px);
 		background-color: nth($colores, 18);
+		border-radius: 25px;
+		box-shadow: 5px 5px 10px #a3abe444;
 		li {
 			margin: 40px;
 			h2 {
@@ -53,7 +56,7 @@
 		@include whSize (700px, 900px);
 		div {
 			margin-right: 20px;
-			margin-left: 20px;
+			// margin-left: 20px;
 			margin-bottom: 20px;
 			label[for=name] {
 				font-size: 20px;
@@ -95,6 +98,8 @@
 			}
 			textarea {
 				width: 100%;
+				max-height: 100%;
+				resize: none;
 				border: 1px solid nth($colores, 4);
 				border-radius: 4px;
 			}
@@ -113,7 +118,7 @@
 			}
 		}
 		h3 {
-			@include text (35px, center, 20px, 10px, none);
+			@include text (35px, start, 20px, 30px, none);
 		}
 	}
 }

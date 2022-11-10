@@ -63,6 +63,8 @@ main {
 .productsTitle {
 	@include flex (flex, center, center);
 	text-align: center;
+	background-color: nth($colores, 6);
+	height: 270px;
 	div {
 		width: 450px;
 		h2 {
@@ -78,15 +80,25 @@ main {
 	@include flex (flex, center, center);
 	flex-wrap: wrap;
 	flex-direction: row-reverse;
-	div {
+	background-color: nth($colores, 6);
+	.zoom {
 		img {
-			@include whSize (300px, 300px);
+			@include whSize (250px, 250px);
+			margin-top: 50px;
 			margin-bottom: 20px;
 		}
 		@include text (0px, center, 20px, 100px, none);
 		width: 450px;
-		border-radius: 40px;
-		border: nth($colores, 1) 10px solid;
+		height: 525px;
+		border-radius: 25px;
+		// border: nth($colores, 6) 10px solid;
+		margin-right: 20px;
+		margin-left: 20px;
+		background-color: nth($colores , 1);
+		box-shadow: 5px 5px 10px #a3abe444;
+		&:hover{
+			transform: scale(1.1);
+		}
 		a {
 			color: nth($colores, 2);
 			@extend %link;
@@ -282,6 +294,8 @@ main {
 .products2Title {
 	@include flex (flex, center, center);
 	text-align: center;
+	background-color: nth($colores, 6);
+	height: 270px;
 	div {
 		h2 {
 			@include text (45px, center, 100px, 20px, none);
@@ -307,14 +321,25 @@ main {
 .products2 {
 	@include flex (flex, center, center);
 	flex-wrap: wrap;
-	div {
+	background-color: nth($colores, 6);
+	.zoom {
 		img {
-			@include whSize (250px, 300px);
+			@include whSize (200px, 250px);
+			margin-top: 50px;
+			margin-bottom: 20px;
 		}
 		@include text (0px, center, 30px, 100px, none);
 		width: 500px;
-		border-radius: 40px;
-		border: nth($colores, 1) 25px solid;
+		height: 525px;
+		border-radius: 25px;
+		// border: nth($colores, 1) 25px solid;
+		margin-right: 20px;
+		margin-left: 20px;
+		background-color: nth($colores, 1);
+		box-shadow: 5px 5px 10px #a3abe444;
+		&:hover{
+			transform: scale(1.1);
+		}
 		a {
 			color: nth($colores, 2);
 			@extend %link;
@@ -344,6 +369,8 @@ main {
 .saleProductsTitle {
 	@include flex (flex, center, center);
 	text-align: center;
+	background-color: nth($colores, 6);
+	height: 270px;
 	div {
 		h2 {
 			@include text (45px, center, 100px, 20px, none);
@@ -371,14 +398,24 @@ main {
 	@include flex (flex, center, center);
 	flex-wrap: wrap;
 	flex-direction: row-reverse;
-	div {
+	background-color: nth($colores, 6);
+	.zoom {
 		img {
-			@include whSize (400px, 400px);
+			@include whSize (300px, 300px);
+			margin-top: 50px;
+			margin-bottom: 20px;
 		}
 		@include text (0px, center, 30px, 100px, none);
-		width: 500px;
-		border-radius: 40px;
-		border: nth($colores, 1) 10px solid;
+		@include whSize(500px, 550px);
+		border-radius: 25px;
+		// border: nth($colores, 1) 10px solid;
+		margin-right: 20px;
+		margin-left: 20px;
+		background-color: nth($colores, 1);
+		box-shadow: 5px 5px 10px #a3abe444;
+		&:hover{
+			transform: scale(1.1);
+		}
 		a {
 			color: nth($colores, 2);
 			@extend %link;

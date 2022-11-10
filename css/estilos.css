@@ -17,13 +17,13 @@ html {
   gap: 0px 0px;
   grid-template-areas: "header header" "main main" "footer footer"; }
 
-.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+.products .zoom a, .products2Title div a, .products2 .zoom a, .saleProductsTitle div a, .saleProducts .zoom a, .shopProducts .zoom a, .supportData div a, .supportData2 div a, .supportData3 div a {
   position: relative;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.5px; }
 
-.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+.products .zoom a:after, .products2Title div a:after, .products2 .zoom a:after, .saleProductsTitle div a:after, .saleProducts .zoom a:after, .shopProducts .zoom a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -32,13 +32,13 @@ html {
   transform-origin: right;
   transition: transform 250ms ease-in; }
 
-.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+.products .zoom a, .products2Title div a, .products2 .zoom a, .saleProductsTitle div a, .saleProducts .zoom a, .shopProducts .zoom a, .supportData div a, .supportData2 div a, .supportData3 div a {
   position: relative;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.5px; }
 
-.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+.products .zoom a:after, .products2Title div a:after, .products2 .zoom a:after, .saleProductsTitle div a:after, .saleProducts .zoom a:after, .shopProducts .zoom a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -78,13 +78,13 @@ header {
   header nav a img {
     height: 24px; }
 
-.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+.products .zoom a, .products2Title div a, .products2 .zoom a, .saleProductsTitle div a, .saleProducts .zoom a, .shopProducts .zoom a, .supportData div a, .supportData2 div a, .supportData3 div a {
   position: relative;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.5px; }
 
-.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+.products .zoom a:after, .products2Title div a:after, .products2 .zoom a:after, .saleProductsTitle div a:after, .saleProducts .zoom a:after, .shopProducts .zoom a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -158,7 +158,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  background-color: #f5f5f7;
+  height: 270px; }
   .productsTitle div {
     width: 450px; }
     .productsTitle div h2 {
@@ -180,35 +182,43 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row-reverse; }
-  .products div {
+  flex-direction: row-reverse;
+  background-color: #f5f5f7; }
+  .products .zoom {
     font-size: 0px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 100px;
     font-style: none;
     width: 450px;
-    border-radius: 40px;
-    border: white 10px solid; }
-    .products div img {
-      width: 300px;
-      height: 300px;
+    height: 525px;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px #a3abe444; }
+    .products .zoom img {
+      width: 250px;
+      height: 250px;
+      margin-top: 50px;
       margin-bottom: 20px; }
-    .products div a {
+    .products .zoom:hover {
+      transform: scale(1.1); }
+    .products .zoom a {
       color: black; }
-      .products div a:after {
+      .products .zoom a:after {
         background-color: black;
         width: 100%;
         height: 2px; }
-      .products div a:hover {
+      .products .zoom a:hover {
         font-weight: bold; }
-        .products div a:hover:after {
+        .products .zoom a:hover:after {
           transform: scaleX(1);
           transform-origin: left; }
-    .products div h3 {
+    .products .zoom h3 {
       font-size: x-large;
       color: black; }
-    .products div p {
+    .products .zoom p {
       font-size: 20px;
       text-align: center;
       margin-top: 20px;
@@ -404,7 +414,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  background-color: #f5f5f7;
+  height: 270px; }
   .products2Title div h2 {
     font-size: 45px;
     text-align: center;
@@ -427,38 +439,47 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
-  .products2 div {
+  flex-wrap: wrap;
+  background-color: #f5f5f7; }
+  .products2 .zoom {
     font-size: 0px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 100px;
     font-style: none;
     width: 500px;
-    border-radius: 40px;
-    border: white 25px solid; }
-    .products2 div img {
-      width: 250px;
-      height: 300px; }
-    .products2 div a {
+    height: 525px;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px #a3abe444; }
+    .products2 .zoom img {
+      width: 200px;
+      height: 250px;
+      margin-top: 50px;
+      margin-bottom: 20px; }
+    .products2 .zoom:hover {
+      transform: scale(1.1); }
+    .products2 .zoom a {
       color: black; }
-      .products2 div a:after {
+      .products2 .zoom a:after {
         background-color: black;
         width: 100%;
         height: 2px; }
-      .products2 div a:hover {
+      .products2 .zoom a:hover {
         font-weight: bold; }
-        .products2 div a:hover:after {
+        .products2 .zoom a:hover:after {
           transform: scaleX(1);
           transform-origin: left; }
-    .products2 div h3 {
+    .products2 .zoom h3 {
       font-size: x-large;
       text-align: center;
       margin-top: 20px;
       margin-bottom: 20px;
       font-style: none;
       color: black; }
-    .products2 div p {
+    .products2 .zoom p {
       font-size: 20px;
       text-align: center;
       margin-top: 20px;
@@ -470,7 +491,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  background-color: #f5f5f7;
+  height: 270px; }
   .saleProductsTitle div h2 {
     font-size: 45px;
     text-align: center;
@@ -495,47 +518,56 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row-reverse; }
-  .saleProducts div {
+  flex-direction: row-reverse;
+  background-color: #f5f5f7; }
+  .saleProducts .zoom {
     font-size: 0px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 100px;
     font-style: none;
     width: 500px;
-    border-radius: 40px;
-    border: white 10px solid; }
-    .saleProducts div img {
-      width: 400px;
-      height: 400px; }
-    .saleProducts div a {
+    height: 550px;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px #a3abe444; }
+    .saleProducts .zoom img {
+      width: 300px;
+      height: 300px;
+      margin-top: 50px;
+      margin-bottom: 20px; }
+    .saleProducts .zoom:hover {
+      transform: scale(1.1); }
+    .saleProducts .zoom a {
       color: black; }
-      .saleProducts div a:after {
+      .saleProducts .zoom a:after {
         background-color: black;
         width: 100%;
         height: 2px; }
-      .saleProducts div a:hover {
+      .saleProducts .zoom a:hover {
         font-weight: bold; }
-        .saleProducts div a:hover:after {
+        .saleProducts .zoom a:hover:after {
           transform: scaleX(1);
           transform-origin: left; }
-    .saleProducts div h3 {
+    .saleProducts .zoom h3 {
       font-size: x-large;
       color: black; }
-    .saleProducts div p {
+    .saleProducts .zoom p {
       font-size: 20px;
       text-align: center;
       margin-top: 20px;
       margin-bottom: 30px;
       font-style: italic; }
 
-.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+.products .zoom a, .products2Title div a, .products2 .zoom a, .saleProductsTitle div a, .saleProducts .zoom a, .shopProducts .zoom a, .supportData div a, .supportData2 div a, .supportData3 div a {
   position: relative;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.5px; }
 
-.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+.products .zoom a:after, .products2Title div a:after, .products2 .zoom a:after, .saleProductsTitle div a:after, .saleProducts .zoom a:after, .shopProducts .zoom a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -549,7 +581,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #f5f5f7; }
   .titleShop h1 {
     font-size: 55px;
     text-align: center;
@@ -570,42 +603,51 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 100px;
-  text-align: center; }
-  .shopProducts div {
+  text-align: center;
+  background-color: #f5f5f7; }
+  .shopProducts .zoom {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #a3abe444;
     width: 400px;
-    height: 500px; }
-    .shopProducts div img {
+    height: 525px; }
+    .shopProducts .zoom:hover {
+      transform: scale(1.1); }
+    .shopProducts .zoom img {
       width: 250px;
       height: 350px; }
-    .shopProducts div h3 {
+    .shopProducts .zoom h3 {
       font-size: x-large;
       margin-bottom: 20px; }
-    .shopProducts div p {
+    .shopProducts .zoom p {
       font-size: 18px;
       text-align: center;
       margin-top: 0px;
       margin-bottom: 25px;
       font-style: italic; }
-    .shopProducts div a {
+    .shopProducts .zoom a {
       color: black; }
-      .shopProducts div a:after {
+      .shopProducts .zoom a:after {
         background-color: black;
         width: 100%;
         height: 2px; }
-      .shopProducts div a:hover {
+      .shopProducts .zoom a:hover {
         font-weight: bold; }
-        .shopProducts div a:hover:after {
+        .shopProducts .zoom a:hover:after {
           transform: scaleX(1);
           transform-origin: left; }
 
-.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+.products .zoom a, .products2Title div a, .products2 .zoom a, .saleProductsTitle div a, .saleProducts .zoom a, .shopProducts .zoom a, .supportData div a, .supportData2 div a, .supportData3 div a {
   position: relative;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.5px; }
 
-.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+.products .zoom a:after, .products2Title div a:after, .products2 .zoom a:after, .saleProductsTitle div a:after, .saleProducts .zoom a:after, .shopProducts .zoom a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -644,13 +686,16 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
-  margin: 60px;
-  margin-bottom: 150px; }
+  padding: 60px;
+  padding-bottom: 150px;
+  background-color: #f5f5f7; }
   .asideContact ul {
     list-style: none;
     width: 400px;
     height: 900px;
-    background-color: #538590; }
+    background-color: #538590;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #a3abe444; }
     .asideContact ul li {
       margin: 40px; }
       .asideContact ul li h2 {
@@ -669,7 +714,6 @@ main {
     height: 900px; }
     .asideContact form div {
       margin-right: 20px;
-      margin-left: 20px;
       margin-bottom: 20px; }
       .asideContact form div label[for=name] {
         font-size: 20px;
@@ -705,6 +749,8 @@ main {
         font-weight: bold; }
       .asideContact form div textarea {
         width: 100%;
+        max-height: 100%;
+        resize: none;
         border: 1px solid #ccc;
         border-radius: 4px; }
       .asideContact form div input[type=submit] {
@@ -720,18 +766,18 @@ main {
           transition: 0.5s; }
     .asideContact form h3 {
       font-size: 35px;
-      text-align: center;
+      text-align: start;
       margin-top: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
       font-style: none; }
 
-.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+.products .zoom a, .products2Title div a, .products2 .zoom a, .saleProductsTitle div a, .saleProducts .zoom a, .shopProducts .zoom a, .supportData div a, .supportData2 div a, .supportData3 div a {
   position: relative;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.5px; }
 
-.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+.products .zoom a:after, .products2Title div a:after, .products2 .zoom a:after, .saleProductsTitle div a:after, .saleProducts .zoom a:after, .shopProducts .zoom a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -769,18 +815,28 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row; }
-  .supportIcons div {
+  flex-direction: row;
+  background-color: #f5f5f7; }
+  .supportIcons .zoom {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #a3abe444;
+    transition: transform .75s;
     text-align: center;
-    width: 300px;
-    height: 100px;
+    width: 250px;
+    height: 150px;
     margin-top: 50px;
-    margin-bottom: 50px; }
-    .supportIcons div img {
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 20px; }
+    .supportIcons .zoom:hover {
+      transform: scale(1.1); }
+    .supportIcons .zoom img {
       width: 75px;
       height: 75px;
-      margin-bottom: 30px; }
-    .supportIcons div a {
+      margin-bottom: 20px;
+      margin-top: 10px; }
+    .supportIcons .zoom a {
       text-decoration: none;
       color: black; }
 
@@ -789,7 +845,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  background-color: #f5f5f7; }
   .supportData div {
     font-size: 0px;
     text-align: left;
@@ -797,11 +854,14 @@ main {
     margin-bottom: 80px;
     font-style: none;
     width: 500px;
-    height: 350px; }
+    height: auto; }
     .supportData div img {
       width: 450px;
       height: 250px;
-      margin-top: 50px; }
+      box-shadow: 10px #a3abe444;
+      transition: transform .75s; }
+      .supportData div img:hover {
+        transform: scale(1.1); }
     .supportData div h2 {
       font-size: 45px;
       text-align: left;
@@ -835,7 +895,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: #f5f5f7; }
   .supportData2 div {
     font-size: 0px;
     text-align: right;
@@ -843,12 +904,16 @@ main {
     margin-bottom: 110px;
     font-style: none;
     width: 500px;
-    height: 400px; }
+    height: auto; }
     .supportData2 div img {
       width: 450px;
       height: 250px;
-      margin-top: 100px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      border-radius: 25px;
+      box-shadow: 5px 5px 10px #a3abe444;
+      transition: transform .75s; }
+      .supportData2 div img:hover {
+        transform: scale(1.1); }
     .supportData2 div h2 {
       font-size: 45px;
       text-align: right;
@@ -882,19 +947,24 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  background-color: #f5f5f7; }
   .supportData3 div {
     font-size: 0px;
     text-align: left;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     font-style: none;
     width: 500px;
-    height: 400px; }
+    height: auto; }
     .supportData3 div img {
       width: 450px;
       height: 250px;
-      margin-top: 85px; }
+      border-radius: 25px;
+      box-shadow: 5px 5px 10px #a3abe444;
+      transition: transform .75s; }
+      .supportData3 div img:hover {
+        transform: scale(1.1); }
     .supportData3 div h2 {
       font-size: 45px;
       text-align: left;
@@ -923,13 +993,13 @@ main {
       margin-bottom: 30px;
       font-style: italic; }
 
-.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+.products .zoom a, .products2Title div a, .products2 .zoom a, .saleProductsTitle div a, .saleProducts .zoom a, .shopProducts .zoom a, .supportData div a, .supportData2 div a, .supportData3 div a {
   position: relative;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.5px; }
 
-.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+.products .zoom a:after, .products2Title div a:after, .products2 .zoom a:after, .saleProductsTitle div a:after, .saleProducts .zoom a:after, .shopProducts .zoom a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -1013,13 +1083,13 @@ main {
       width: 400px;
       height: 400px; }
 
-.products div a, .products2Title div a, .products2 div a, .saleProductsTitle div a, .saleProducts div a, .shopProducts div a, .supportData div a, .supportData2 div a, .supportData3 div a {
+.products .zoom a, .products2Title div a, .products2 .zoom a, .saleProductsTitle div a, .saleProducts .zoom a, .shopProducts .zoom a, .supportData div a, .supportData2 div a, .supportData3 div a {
   position: relative;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.5px; }
 
-.products div a:after, .products2Title div a:after, .products2 div a:after, .saleProductsTitle div a:after, .saleProducts div a:after, .shopProducts div a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
+.products .zoom a:after, .products2Title div a:after, .products2 .zoom a:after, .saleProductsTitle div a:after, .saleProducts .zoom a:after, .shopProducts .zoom a:after, .supportData div a:after, .supportData2 div a:after, .supportData3 div a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -1099,8 +1169,6 @@ ul {
     background-image: url(../img/backgroundPink.jpg); } }
 
 @media screen and (max-width: 1440px) {
-  .products div {
-    width: 350px; }
   .hero {
     background-image: url(../img/heroSection/montereyMobile.jpg);
     width: 100%;
@@ -1138,7 +1206,8 @@ ul {
     inset: 0;
     padding: 0rem 0;
     margin-left: 0rem;
-    color: #9613dd;
+    color: white;
+    font-weight: bolder;
     line-height: 1;
     text-align: center;
     transition: all 0.4s ease-in-out; }
@@ -1194,23 +1263,24 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-  .products div {
-    height: 450px; }
+  .products .zoom {
+    width: 450px;
+    height: 500px; }
   .products2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-  .products2 div {
-    height: 450px; }
+  .products2 .zoom {
+    height: 525px; }
   .saleProducts {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-  .saleProducts div {
-    height: 450px; }
-  .saleProducts div img {
+  .saleProducts .zoom {
+    height: 575px; }
+  .saleProducts .zoom img {
     width: 320px;
     height: 320px; }
   /* ---CONTACT--- */
@@ -1368,23 +1438,23 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-  .products div {
-    height: 450px; }
+  .products .zoom {
+    height: 500px; }
   .products2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-  .products2 div {
-    height: 450px; }
+  .products2 .zoom {
+    height: 525px; }
   .saleProducts {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-  .saleProducts div {
-    height: 450px; }
-  .saleProducts div img {
+  .saleProducts .zoom {
+    height: 575px; }
+  .saleProducts .zoom img {
     width: 320px;
     height: 320px; }
   /* --------ABOUT--------*/
@@ -1506,7 +1576,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    margin: 60px; }
+    padding: 60px; }
   .asideContact ul {
     text-align: center;
     list-style: none;
@@ -1533,16 +1603,18 @@ ul {
   .supportCover div {
     text-align: center;
     margin-right: 0px; }
-  .supportIcons div img {
+  .supportIcons .zoom img {
     height: 75px;
     width: 75px;
     margin-bottom: 30px; }
-  .supportIcons div {
+  .supportIcons .zoom {
     text-align: center;
     width: 250px;
-    height: 100px;
+    height: 150px;
     margin-top: 50px;
     margin-bottom: 50px; }
+  .supportIcons .zoom img {
+    margin-bottom: 20px; }
   /* ----------ABOUT------- */
   .aboutCover {
     background-image: url(../img/iphone14HeroMobile.jpg);
@@ -1724,14 +1796,14 @@ ul {
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column; }
-  .supportIcons div img {
+  .supportIcons .zoom img {
     height: 75px;
     width: 75px;
-    margin-bottom: 30px; }
-  .supportIcons div {
+    margin-bottom: 20px; }
+  .supportIcons .zoom {
     text-align: center;
     width: 200px;
-    height: 100px;
+    height: 150px;
     margin-top: 50px;
     margin-bottom: 50px; }
   /* -----ABOUT------- */
@@ -1756,7 +1828,7 @@ ul {
   .hero div h1 {
     color: white;
     background-color: transparent;
-    font-size: 38px;
+    font-size: 1.875em;
     margin-bottom: 30px;
     font-family: Styrene A Web, sans-serif; }
   .footer-col {
@@ -1773,6 +1845,31 @@ ul {
     box-sizing: border-box;
     width: 50px;
     display: none; }
+  .productsTitle div {
+    width: 300px; }
+  .products2Title div {
+    width: 300px; }
+  .products .zoom img {
+    width: 200px;
+    height: 200px; }
+  .products2 .zoom img {
+    width: 150px;
+    height: 200px; }
+  .saleProducts .zoom {
+    width: 300px;
+    height: 450px; }
+  .productsTitle div img {
+    width: 200px;
+    height: 200px; }
+  .products2 .zoom {
+    width: 300px;
+    height: 500px; }
+  .products .zoom {
+    width: 300px;
+    height: 450px; }
+  .saleProducts .zoom img {
+    width: 200px;
+    height: 200px; }
   .titleShop h1 {
     font-size: 40px; }
   .titleShop h2 {
@@ -1783,7 +1880,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    margin: 60px; }
+    padding: 60px; }
   .asideContact ul {
     text-align: center;
     list-style: none;
@@ -1808,38 +1905,38 @@ ul {
     text-transform: uppercase; }
   .asideContact form {
     width: 300px;
-    height: 1000px; }
+    height: 900px; }
   /* ---------HELP------------ */
   .supportData div {
     text-align: left;
     width: 350px;
-    height: 350px;
-    margin-top: 50px;
+    height: auto;
+    margin-top: 100px;
     margin-bottom: 80px; }
-  .supportData div img {
+  .supportData .zoom img {
     height: 200px;
     width: 350px;
-    margin-top: 50px; }
+    margin-top: 0px; }
   .supportData2 div {
     text-align: left;
     width: 350px;
-    height: 450px;
+    height: auto;
     margin-top: 50px;
     margin-bottom: 80px; }
-  .supportData2 div img {
+  .supportData2 .zoom img {
     height: 200px;
     width: 350px;
-    margin-top: 50px; }
+    margin-top: 0px; }
   .supportData3 div {
     text-align: left;
     width: 350px;
-    height: 450px;
+    height: auto;
     margin-top: 50px;
     margin-bottom: 80px; }
-  .supportData3 div img {
+  .supportData3 .zoom img {
     height: 200px;
     width: 350px;
-    margin-top: 50px; }
+    margin-top: 0px; }
   /* --------ABOUT-------- */
   .aboutCover div {
     width: 400px;
@@ -1877,8 +1974,9 @@ ul {
 
 @media screen and (max-width: 500px) {
   .hero div h1 {
-    font-size: 24px; }
-  .shopProducts div {
+    font-size: 1.875em;
+    text-align: center; }
+  .shopProducts .zoom {
     height: 500px;
     width: 300px; }
   .productsTitle div {
@@ -1891,12 +1989,12 @@ ul {
   .products2 div img {
     width: 150px;
     height: 200px; }
-  .saleProducts div {
+  .saleProducts .zoom {
     width: 300px; }
   .productsTitle div img {
     width: 200px;
     height: 200px; }
-  .products2 div {
+  .products2 .zoom {
     width: 300px; }
   .saleProducts div img {
     width: 200px;
@@ -1919,7 +2017,7 @@ ul {
     text-align: center;
     list-style: none;
     width: 250px;
-    height: 700px;
+    height: 625px;
     background-color: #538590; }
   .asideContact ul li {
     width: 160px; }
@@ -1945,7 +2043,7 @@ ul {
     text-transform: uppercase; }
   .asideContact form {
     width: 250px;
-    height: 1000px; }
+    height: 900px; }
   .asideContact form h3 {
     font-size: 25px;
     padding: 20px;
@@ -1981,33 +2079,33 @@ ul {
   .supportData div {
     text-align: left;
     width: 300px;
-    height: 300px;
+    height: auto;
     margin-top: 50px;
     margin-bottom: 80px; }
-  .supportData div img {
+  .supportData .zoom img {
     height: 200px;
     width: 300px;
-    margin-top: 150px; }
+    margin-top: 0px; }
   .supportData2 div {
     text-align: left;
     width: 300px;
-    height: 350px;
+    height: auto;
     margin-top: 50px;
     margin-bottom: 80px; }
-  .supportData2 div img {
+  .supportData2 .zoom img {
     height: 200px;
     width: 300px;
-    margin-top: 150px; }
+    margin-top: 0px; }
   .supportData3 div {
     text-align: left;
     width: 300px;
-    height: 400px;
+    height: auto;
     margin-top: 50px;
     margin-bottom: 80px; }
-  .supportData3 div img {
+  .supportData3 .zoom img {
     height: 200px;
     width: 300px;
-    margin-top: 150px; }
+    margin-top: 0px; }
   /*-------------ABOUT------------*/
   .aboutCover div {
     width: 300px;
@@ -2051,21 +2149,22 @@ ul {
     width: 300px; } }
 
 @media screen and (max-width: 380px) {
-  .products div {
-    width: 250px; }
-  .products2 div {
-    width: 250px; }
-  .saleProducts div {
-    width: 250px; }
+  .products .zoom {
+    width: 300px;
+    height: 300; }
+  .products2 .zoom {
+    width: 300px; }
+  .saleProducts .zoom {
+    width: 300px; }
   /* ----CONTACT------ */
   .asideContact ul {
     text-align: center;
     list-style: none;
     width: 230px;
-    height: 700px;
+    height: 650px;
     background-color: #538590; }
   .asideContact form {
-    width: 230px;
-    height: 1000px; }
+    width: 100%;
+    height: 900px; }
   .asideContact ul li {
     width: 140px; } }
