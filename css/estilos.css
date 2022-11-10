@@ -76,7 +76,7 @@ header {
     justify-content: center;
     align-items: center; }
   header nav a img {
-    height: 24px; }
+    height: 45px; }
 
 .products .zoom a, .products2Title div a, .products2 .zoom a, .saleProductsTitle div a, .saleProducts .zoom a, .shopProducts .zoom a, .supportData div a, .supportData2 div a, .supportData3 div a {
   position: relative;
